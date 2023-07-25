@@ -1,0 +1,3 @@
+activeMQUrl: tcp://fcr-v-esbtest01:61621
+activeMqUser: javaMQTest
+activeMqPassword: javaMQT3st

@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+       
+channelSetDomainUrl: http://ChannelsDomainService
+channelSetBusinessUrl : http://ChannelsBusinessService
+partnershipCampaignDomainServiceUrl : http://PartnershipCampaignDomainService-V1

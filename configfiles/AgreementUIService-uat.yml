@@ -1,0 +1,41 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+
+
+agreementUrl: http://AGREEMENTSERVICE
+
+serviceURI: http://TEAMSERVICE
+
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+
+companyserviceUrl: http://COMPANYSERVICE
+
+productserviceUrl:  http://PRODUCT-SERVICE-MINT
+
+AudienceserviceUrl: http://AUDIENCEVIEW
+
+commoditiesUrl: http://COMMODITYDOMAINSERVICE
+
+platformUrl: http://PLATFORMDOMAINSERVICE
+
+audienceUrl: http://AUDIENCEDOMAINSERVICE
+
+productsUrl: http://PRODUCTDOMAINSERVICE
+
+companyUrl: http://COMPANYDOMAINSERVICE
+
+campaignBusinessServiceUrl: http://CAMPAIGNREFERENCEBUSINESSSERVICE
+
+campaignBusinessUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+
+agreemetBusinessUrl: http://AGREEMENTBUSINESSSERVICE
+
+reconciliatorAccountUrl: http://RECONCILIATORDOMAINSERVICE
+userManagementDomainUrl: http://USERMANAGEMENTDOMAINSERVICE
+companyBusinessUrl: http://COMPANYBUSINESSSERVICE
+daypartBusinessServiceUrl: http://AGREEMENTBUSINESSSERVICE
+daypartDomainServiceUrl: http://AGREEMENTSERVICE

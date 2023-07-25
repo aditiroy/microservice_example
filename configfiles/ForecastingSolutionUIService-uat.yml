@@ -1,0 +1,17 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+
+forecastDefinitionUrl : http://ForecastDefinitionService
+forecastParamUri : http://ForecastDefinitionService/forecastparameter
+audienceServiceUrl : http://AUDIENCEVIEW
+forecastDomainServiceUrl: http://FORECASTDEFINITIONSERVICE
+forecastBusinessServiceUrl: http://FORECASTBUSINESSSERVICE
+channelsetshierarchyUrl: http://ChannelsDomainService
+forecastsPredictionUri : http://ForecastDefinitionService
+channelSetServiceUrl : http://CHANNELSETSERVICE
+forecastingSolutionDomainServiceUrl : http://ForecastingSolutionDomainService
+forecastingSolutionBusinessServiceUrl : http://ForecastingSolutionBusinessService

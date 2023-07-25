@@ -1,0 +1,21 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+      
+criApiUrl : http://CriApiService/copyRotationInstruction
+criAssignmentURL : http://k2-server-int02:8020/api/AssignCRITask
+criAssigneeURL: http://k2-server-int02:8020/api/CRITaskCount
+teamCRIUrl : http://TEAMSERVICE/users/role=
+k2CRIViewDetailsUrl : http://k2-server-int02:8020/api/CRIWorklist
+criAssignedCharactersURL : http://CRIProductMappingService/CRIAssignedCharacters
+criSaveCharactersURL : http://CRIProductMappingService/CRISaveCharacters
+channelSetUrl : http://CHANNELSETSERVICE/channelSets/
+k2CRIPutUrl: http://k2-server-int02:8020/copyrotationinstruction/Status 
+rotationBusinessServiceUrl: http://ROTATIONBUSINESSSERVICE 

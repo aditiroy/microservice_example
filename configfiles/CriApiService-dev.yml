@@ -1,0 +1,30 @@
+domain: Campaign
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1
+    username: CAM_OWNER
+    password: P0l0mint
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    tomcat:
+         connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jpa:
+    properties:
+      hibernate:
+        format-sql: true
+        dialect: org.hibernate.dialect.Oracle12cDialect
+  jackson:
+    serialization: null
+    WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+defaultPage: 0
+defaultcount: 100
+com.channel4.mint.cri.cariaMappingUrl: http://CariaApprovalMapService
+com.channel4.mint.cri.onhold: On-Hold
+com.channel4.mint.cri.readyForProcessing: Ready to Process
+com.channel4.mint.cri.readyForProcessingWarn: Ready to Process - Warning
+com.channel4.mint.cri.queryApprovalDaoCampaignApprovalList: http://QueryApprovalDAOService/approvals?search=approvalNumber[eq]

@@ -1,0 +1,18 @@
+server:
+  port: 8888
+management:
+  context-path: /admin
+  
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'INFO'
+    
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@gitlab.channel4.com:MINT/configuration-files.git
+          basedir: target/config
+  

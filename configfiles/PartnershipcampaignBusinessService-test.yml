@@ -1,0 +1,22 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+
+partnershipUrl: http://PARTNERSHIPCAMPAIGNLINEARDOMAINSERVICE
+com.channel4.mint.partnershipcampaign.productDomainHost: http://ProductDomainService
+com.channel4.mint.partnershipcampaign.scheduleEpisodeBusinessHost: http://QpsScheduleEpisodeService
+com.channel4.mint.qps.dateFormatInput: yyyy-MM-dd
+com.channel4.mint.qps.dataFormatOutput: yyyy-MM-dd
+channelDomainServiceUrl: http://ChannelsDomainService
+com.channel4.mint.partnershipcampaign.cpgDomainHost: http://CpgDomainService
+activeMqUser : javaMQTest
+activeMqPassword : javaMQT3st
+activeMQUrl : tcp://fcr-v-esbtest01:61621
+queue.partnershipcampaign : ProductPlacementQ
+episodesBusinessUrl : http://QpsEpisodesBusinessService
+seriesBusinessUrl: http://QpsSeriesBusinessService
+com.channel4.mint.partnershipcampaign.assetBusinessHost: http://AssetBusinessService
+

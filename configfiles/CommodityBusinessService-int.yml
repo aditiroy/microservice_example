@@ -1,0 +1,17 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+           
+commodityDomainUrl: http://CommodityDomainService
+productdomainUrl: http://PRODUCTDOMAINSERVICE
+customProgrammeGroupDomainUrl: http://CPGDOMAINSERVICE
+copyBusinessServiceUrl: http://COPYBUSINESSSERVICE
+pirateMuleService: http://appservice.int.channel4.local:9242/inventory
+qpsPirateMuleService: http://appservice.int.channel4.local:9137/adsales/qpspirateservice/api

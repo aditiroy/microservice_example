@@ -1,0 +1,115 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+           
+channelDomainServiceUrl: http://ChannelsDomainService
+qpsjunctionbusinessserviceUrl: http://QpsJunctionBusinessService
+airtimeStatusDomainServiceUrl: http://AirtimeStatusDomainService
+agrpricingAudienceDomainService: http://AgrpricingAudienceDomainService
+networkLevelTxId: 0
+scheduleGroupTypeLFTBreak: test
+eventTypeSpot: SPOT
+eventTypeSFT: SFTSPOT
+thresholdMinEfficiency: 0
+commercialBreakDomainUrl: http://CommercialBreakDomainService
+programmescheduledomainservice: http://QPS-ProgramScheduleDomainService
+maintaintrailslottBusinessService : http://MaintainTrailslotBusinessService
+commodityDomainService : http://CommodityDomainService
+trailDomainService : http://TrailDomainService
+trailCopyDomainService : http://TrailCopyDomainService
+trailBusinessServiceUrl : http://TRAILBUSINESSSERVICE
+productDomainService : http://Product-DAO-Service-Mint
+singleScheduleURL : http://appservice.int.channel4.local:9151/delivery/api/promo
+commercialBreakBusinessServiceURL : http://CommercialBreakBusinessService
+channelDomainService: http://ChannelsDomainService
+com.channel4.mint.qps.externalasset.externalAssetHost: http://appservice.int.channel4.local:9138/adsales/qpsexternalassetservice/api
+com.channel4.mint.qps.pirate.pirateHost: http://appservice.int.channel4.local:9137/adsales/qpspirateservice/api
+com.channel4.mint.qps.singleschedule.singleScheduleHost: http://appservice.int.channel4.local:9136/adsales/qpssinglescheduleservice/api
+com.channel4.mint.qps.programScheduleDomain.programScheduleDomainServiceHost: http://QPS-ProgramScheduleDomainService
+com.channel4.mint.qps.junction.audienceHost: http://AUDIENCEVIEW
+com.channel4.mint.qps.programScheduleDomain.efficiencyDomainServiceHost: http://Qps-EfficiencyTargetDomainService
+
+com.channel4.mint.qps.scheduleValue: schedule
+com.channel4.mint.qps.uktv: Uk Tv
+com.channel4.mint.qps.scheduleGroupChannelType: Channel
+com.channel4.mint.qps.scheduleGroupProgramme: PROGRAMME  
+com.channel4.mint.qps.scheduleGroupCommercial: COMMERCIAL
+com.channel4.mint.qps.dateFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+com.channel4.mint.qps.defaultStartTime: 00:00:00
+com.channel4.mint.qps.defaultEndTime: "23:59:59"
+com.channel4.mint.qps.dataFormatOutput: yyyy-MM-dd
+com.channel4.mint.qps.timeFormat: HH:mm:ss
+# In Hour
+com.channel4.mint.qps.specificJunctionIntervalInHour: 1
+# Three Minutes
+com.channel4.mint.qps.nearestJunctionInSeconds: 180
+
+
+distributionType: CHANNEL
+scheduleGroupCommercialTypeId: 3
+scheduleEventTrailTypeId: 9
+scheduleGroupCommercialType: COMMERCIAL
+createScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/createschedulegroup
+modifyScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/modifyschedulegroup
+deleteScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/deleteScheduleGroups
+regionDomainServiceUrl : http://RegionDomainService
+com.channel4.mint.qps.singleschedule.singleScheduleHostTemp: http://appservice.int.channel4.local:9242/inventory/getsingleschedulegroup
+com.channel4.mint.qps.singleschedule.eventTypeHost: http://appservice.int.channel4.local:9242
+commercialbreakStartTimeFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+commercialBreak: COMMERCIAL
+lftBreakType: LFTELESHOPPINGBREAK
+commercialBreakBusinessUrl: http://COMMERCIALBREAKBUSINESSSERVICE
+threadCount: 10
+sftslConstant: 30000
+planned: PLANNED
+isRatingRequired: ISRATINGREQUIRED
+aiRTimeStatus: AIRTIMESTATUS
+hiddenToSales: Hidden to Sales
+sfTeleshoppingSL: SFTELESHOPPINGSL
+spotSL: SPOTSL
+bseTime: "30:59:59"
+bstTime: "28:59:59"
+otherTime: "29:59:59"
+mailfrom : mintadmin@channel4.co.uk
+mailto: rashmi.gupta@hcl.com,Mayank.Himanshu@hcl.com,kapanir@hcl.com,mansi_d@hcl.com,asitkumar.s@hcl.com,batra.m@hcl.com
+mailtype: Tx Driven Campaign
+mailsubjectmovesuccess: (U) Move Trail(s) successful
+mailsubjectmovefailure: (U) Move Trail(s) failed
+movemailbodysuccess: Trail(s) successfully moved to <Product type> <Product name> <Product code> , <SlotDate>, Campaign Id  <ID> by <User> on <Date> .Following Trail(s) successfully booked-TrailId- <Trail Ref No> - <Programme Break Part> - <SlotDate> - <Length> - <Channel> - <Schedule Episode Before> - <Schedule Episode After>
+movemailbodyfailure: Moving of Trail(s) failed for Product <Product type> <Product name> <Product code> , Campaign Id <ID> by <User> on <Date>  due to <Reason of failure> Following Trail(s) failed <Trail Ref No> - <Programme Break Part> - <SlotDate> -  <Length> - <Channel> - <Schedule Episode Before> - <Schedule Episode After> - <reason of failure>
+mailsubjectsuccess: (U) Book Trail(s) successful
+mailbodysuccess: Trail(s) successfully booked to <Product type> <Product name> <Product code> , <SlotDate>, Campaign Id  <ID> by <User> on <Date>  Following Trail(s) successfully booked-TrailId- <Trail Ref No> - <Programme Break Part> - <SlotDate> - <Length> - <Channel> - <Schedule Episode Before> - <Schedule Episode After>
+mailsubjectfailure: (U) Book Trail(s) failed
+mailbodyfailure: Booking of Trail(s) failed for Product <Product type> <Product name> <Product code> , Campaign Id <ID> by <User> on <Date>  due to <Reason of failure> Following Trail(s) failed <Trail Ref No> - <Programme Break Part> - <SlotDate> -  <Length> - <Channel> - <Schedule Episode Before> - <Schedule Episode After> - <reason of failure>
+destinationQueueMail: T_GENERIC_EMAIL
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+audienceUIService: http://AUDIENCEDOMAINSERVICE
+
+oddHourCornJobSchedulePattern: 0 0 9-19/2 * * MON-FRI
+threeMinuteCornJobSchedulePattern: 0 0/3 * * * *
+trailPatternQueue: c4_adsales_trail_pattern_amend_copy_length_Queue
+trailPatternMulePost: http://appservice.int.channel4.local:9151/delivery/api/promo/trailpattern
+trailsMuleGet: http://appservice.int.channel4.local:9151/delivery/api/promo/trails
+
+trailSetDomainServiceUrl: http://TrailSetDomainService
+productDomainServiceUrl: http://ProductDomainService
+postConflictionValidationCommodityDomainUrl: http://CommodityDomainService/trail/conflictionvalidation
+promotionDomainUrl: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+
+promoCampaignBusinessService: http://PROMOTIONCAMPAIGNBUSINESSSERVICEV1
+audienceDomainService: http://AUDIENCEDOMAINSERVICE
+maintainTrailslotDomainService: http://MAINTAINTRAILSLOTDOMAINSERVICE
+destinationTopicMail: c4_adsales_email
+fromName: fromName
+userManagementDomainServiceUrl: http://UserManagementDomainService
+commercialbreakMuleService : http://appservice.int.channel4.local:9242
+inventoryBusinessUrl: http://InventoryBusinessService-V1  

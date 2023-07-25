@@ -1,0 +1,99 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-prodsr1:1111/eureka,http://cft-v-mt-prodsr1:1112/eureka
+campaignDomainUrl: http://CAMPAIGNDOMAINSERVICE-V1
+companyDomainService: http://COMPANYDOMAINSERVICE
+agreementBusinessService: http://AGREEMENTBUSINESSSERVICE
+productDomainService: http://PRODUCTDOMAINSERVICE
+audienceDomainService: http://AUDIENCEDOMAINSERVICE
+userManagementDomainService: http://UserManagementDomainService
+adServerDomainServiceUrl: http://ADSERVERDOMAINSERVICE
+channelsDomainService: http://CHANNELSDOMAINSERVICE
+audienceDetailBusinessService: http://AGRPRICINGAUDIENCEBUSINESSSERVICE
+cpgBusinessServiceURL: http://AssetBusinessService
+cpgDomainServiceURL: http://CPGDOMAINSERVICE
+approvalViewService: http://QUERYAPPROVALDAOSERVICE
+channelSetUrl: http://CHANNELSETSERVICE
+agreementViewUrl: http://AGREEMENTSERVICE
+approvalServiceURI: http://APPROVAL-VIEW-SERVICE-MINT/CampaignApprovals/
+partnershipCampaignDomainServiceUrl: http://PartnershipCampaignDomainService-V1
+audienceDetailDomainService: http://AGRPRICINGAUDIENCEDOMAINSERVICE
+eventLengthDomainServiceURL: http://DELIVERYDOMAINSERVICE-V1
+copyDomainUrl: http://CopyDomainService
+productDomainServiceUrl: http://PRODUCTDOMAINSERVICE/
+agreementServiceUrl: http://AGREEMENTSERVICE
+bpgServiceUrl: http://BPGSERVICE
+programmeScheduleBusinessServiceUrl: http://QPS-PROGRAMMESCHEDULEBUSINESSSERVICE
+autoMarkUnmarkDomainServiceUrl: http://SPONSORSHIPDOMAINSERVICE-V1
+onlineCampaignBusinessService: http://ONLINECAMPAIGNBUSINESSSERVICE
+mockJWT: eyJhbGciOiJub25lIn0.eyJVc2VySUQiOiJtaW50dXNlcjEiLCJVc2VyUmVmTm8iOjI0LCJGaXJzdE5hbWUiOiJtaW50dXNlcjEiLCJTdXJuYW1lIjoiIiwicm9sZXMiOlsiVVJfR3JvdXBBZ2VuY3lTYWxlc01hbmFnZXIiLCJVUl9TZW5pb3JUcmFkZXIiLCJNaW50LW93bmVyIiwiVVJfQnVzaW5lc3NTdXBwb3J0IiwiVVJfV29ya2luZ1NhbGVzRXhlY3V0aXZlIiwiVVJfVHJhZmZpY0V4ZWN1dGl2ZSIsIlVSX1JldmVudWVTZXRPd25lciIsIlVSX0FnZW5jeVNhbGVzTWFuYWdlciIsIlVSX1RyYWRlciIsIk1pbnQtR3JvdXAgQWdlbmN5IFNhbGVzIE1hbmFnZXIiXSwiaWF0IjoxNDkyNjIzOTAwfQ.
+commercialCampaignDomainServiceUrl: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+deliveryDomainService: http://DeliveryDomainService-V1
+markingUnmarkingQueueName: Q_MARKING_UNMARKING_CAMPAIGN
+episodesMarkingUnmarkingQueueName: Q_MARKING_UNMARKING_EPISODES
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+activeMQUrl: tcp://fcr-v-esbint01:61621
+fileLocationQueue: T_FILE_DELIVERY_DATA
+fixedRate: 3600000
+promotionCampaignDomainSerrvice: http://PROMOTIONCAMPAIGNDOMAINSERVICE
+platformDomainSerrvice: http://PLATFORMDOMAINSERVICE
+skipLines: 3
+noOfRow: 5
+k2workFlowUser: SVCK2MINTMULEUSER
+k2workFlowPassword: Password1
+k2workFlowDomain: channel4
+k2workFlowEnv: k2-workspace-int02
+k2WorkFlowUrl: http://k2-server-test02:8020//ValueAdjustmentApproval/Tasks
+k2ValueAdjustmentUrl: http://k2-server-test02:8020//ValueAdjustmentApproval/Status
+tDeliveryDataQueue: T_DELIVERY_DATA
+campaignBusinessServiceUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+agreementReferencesDomainService: http://AGREEMENTSERVICE
+campaignDomainService: http://CAMPAIGNDOMAINSERVICE-V1
+promotionCampaignDomainService: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+sponsorshipCreditsDomainServiceUrl: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+onlinePackagenDomainUrl: http://OnlinePackageDomainService
+adserverDomainUrl: http://AdServerDomainService
+platformDomainUrl: http://PlatformDomainService
+spotDomainServiceUrl: http://SPOTSDOMAINSERVICE-V1
+approvalDomainServiceUrl: http://APPROVALDOMAINSERVICE-V1
+teamDomainService: http://USERMANAGEMENTDOMAINSERVICE
+serieseBusinessServiceURL: http://QPSSERIESBUSINESSSERVICE
+episodesBusinessServiceUrl: http://QPSEPISODESBUSINESSSERVICE
+muleService: http://appservice.test.channel4.local:9242/inventory
+seriesBusinessService: http://QPSSERIESBUSINESSSERVICE
+episodeBusinessService: http://QPSEPISODESBUSINESSSERVICE
+programScheduleDomainService: http://QPS-PROGRAMSCHEDULEDOMAINSERVICE
+campaignDomainServiceUrl: http://CAMPAIGNDOMAINSERVICE-V1
+productPlacementQ: ProductPlacementQ
+actionNamePut: CampaignUpdated
+actionNamePost: CampaignCreated
+k2StatusUri: http://k2-server-int02:8020/Approval/ActionTask?
+commercialInventoryBusinessService: http://COMMERCIALINVENTORYBUSINESS
+revenueSetDomainServiceUrl: http://REVENUESETAPISERVICE
+macrofactorDomainServiceUrl: http://MACROFACTORSDOMAINSERVICE
+approvalBusinessServiceUrl: http://APPROVALBUSINESSSERVICE-V1
+mailfrom : mintadmin@channel4.co.uk
+mailto: batra.m@hcl.com, joshi_n@hcl.com
+fromName: Admin
+toName: Zeus ERP
+destinationTopicMail: T_EMAIL
+mailSubject: This is an Automated mail from MINT || Manage Proforma 
+creditsAmendPatternQueueName: Q_CREDITS_AMEND_PATTERN
+adServerTopic: T_ADSERVER
+qpsScheduleBusinessService: http://QpsScheduleEpisodeService
+sponsorshipCreditsBusinessService: http://SPONSORSHIPCREDITSBUSINESSSERVICE-V1
+commercialInventoryDomainServiceUrl: http://COMMERCIALINVENTORYDOMAINSERVICE
+spotBusinessServiceUrl: http://SPOTSBUSINESSSERVICE-V1
+billingDomainService: http://BILLINGDOMAINSERVICE-V1
+defaultPosition: All
+defaultDayType: All Days
+scheduleEpisodeMuleService: http://appservice.int.channel4.local:9242
+inventoryBusinessService: http://INVENTORYBUSINESSSERVICE-V1
+sponsorShipCreditDomainServiceUrl: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+calculateMonthVar: 3
+inventoryDomainService: http://INVENTORYDOMAINSERVICE-V1
+rotationDomainService: http://ROTATIONDOMAINSERVICE

@@ -1,0 +1,39 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr1:1112/eureka
+           
+commercialCampaignDomainServiceUrl: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+campaignBusinessServiceUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+reconciliatorDomainServiceUrl: http://RECONCILIATORDOMAINSERVICE
+audienceDomainServiceUrl: http://AGRPRICINGAUDIENCEDOMAINSERVICE
+spotBusinessServiceUrl: http://SPOTSBUSINESSSERVICE-V1	
+toEmail: smita.t@hcl.com
+fromEmail: mintadmin@channel4.co.uk
+toName: toName
+xmlEmailQ: T_EMAIL
+priceAuditQ: Q_PRICE_AUDIT_EMAIL
+priceHistoryQ: Q_PRICE_HISTORY
+
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+creditsAmendPatternQueueName: Q_CREDITS_AMEND_PATTERN
+markingUnmarkingQueueName: Q_MARKING_UNMARKING_CAMPAIGN
+adServerTopic: T_ADSERVER
+
+tScheduledEpisodeChanges: T_SCHEDULED_EPISODES_CHANGES
+scheduledEpisodeBusinessServiceUrl: http://QpsScheduleEpisodeService/
+channelSetDomainUrl: http://ChannelsDomainService
+partnershipCampaignDomainUrl: http://PartnershipCampaignDomainService-V1
+scheduleEpisodeMuleService: http://appservice.int.channel4.local:9242
+cpgDomainUrl: http://CPGDomainService
+seriesDetailsUrl: http://QpsSeriesBusinessService/series/
+assetBusinessServiceUrl: http://AssetBusinessService/
+episodesUrl: http://QpsEpisodesBusinessService/episodes

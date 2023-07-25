@@ -1,0 +1,26 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+  client:
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+      
+singleScheduleMuleUrl : http://appservice.test.channel4.local:9936/adsales/qpssinglescheduleservice/api
+pirateMuleUrl : http://appservice.test.channel4.local:9937/adsales/qpspirateservice/api/  
+programmeScheduleDomainServiceUrl : http://QPS-PROGRAMSCHEDULEDOMAINSERVICE
+partnershipDomainServiceUrl : http://PartnershipcampaignlinearDomainService
+
+agreementUrl : http://AGREEMENTSERVICE/agreements/
+partnershipDomainUrl : http://PARTNERSHIPCAMPAIGNLINEARDOMAINSERVICE/
+productDomainUrl : http://PRODUCTDOMAINSERVICE/
+progScheduleDomainUrl : http://QPS-PROGRAMSCHEDULEDOMAINSERVICE/
+channelDomainServiceUrl : http://CHANNELSDOMAINSERVICE
+cpgDomainServiceUrl : http://CPGDOMAINSERVICE
+sponsorShipCreditDomainService: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+sponsorshipDomainUrl: http://SPONSORSHIPDOMAINSERVICE-V1
+pirateUri: http://appservice.uat.channel4.local:9242/inventory/

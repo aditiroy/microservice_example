@@ -1,0 +1,46 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---
+domain: Inventory
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1
+        username: INV_OWNER
+        password: P0l0mint
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+
+channelSetServiceUrl: http://CHANNELSETSERVICE
+forecastsPredictionUri: http://ForecastDefinitionService
+applicationMame : BreakAverageRating
+sucessSubject :  Break Average Rating Calculations Successful
+failureSubject : Break Average Rating Calculations Failed
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+destinationQueue: BreakAverageRatings.Q
+channelSetUrl: http://cft-v-mt-inta1.channel4.local:9101/channelsetshierarchy
+sucessDesc: Break average ratings have been calculated successfully.
+failureDesc : Failed to calculate break average rating.
+mailQueue : EmailQueue
+FPRQ: FPR.Q
+corePoolSize : 70
+maxPoolSize : 100
+queueCapacity : 400000
+fixedRate : 100000
+hoursInStartTimeVal : 30
+noOfEcecutingThread : 5
+txLevelsUrl : http://ChannelsDomainService/txlevels
+fprQueue : Q_IN_FPR

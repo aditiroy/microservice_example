@@ -1,0 +1,28 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+---
+domain: Campaign
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-TSTORA01:1521:MNTUAT1
+        username: CAM_USER
+        password: Mint03s
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+
+STARTING_SEQUENCE : 1
+SEQUENCE_FIRST_PREFIX : 0
+SEQUENCE_PREFIX : 00
+END_SEQUENCE : 999

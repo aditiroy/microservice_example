@@ -1,0 +1,26 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+           
+audienceGroupsUrl: http://AudienceDomainService/audiencegroups
+audiencesUrl: http://AudienceDomainService/audiences
+ddsAudiencesUrl: http://AudienceDomainService/ddsaudiences
+audienceDomainCountriesUrl: http://AudienceDomainService/audiences/ratingsagencies/countries
+audienceDomainAudienceListUrl: http://AudienceDomainService/audiencelist
+audienceDomainUrl: http://AudienceDomainService
+commercialBreakUrl: http://COMMERCIALBREAKDOMAINSERVICE
+programScheduleDomainServiceUrl: http://QPS-PROGRAMSCHEDULEDOMAINSERVICE
+maintainTrailSlotBusinessServiceUrl: http://MAINTAINTRAILSLOTBUSINESSSERVICE
+
+inventoryDomainService: http://InventoryDomainService-V1
+spotsDomainService: http://SPOTSDOMAINSERVICE-V1
+c4categoriesBusinessService: http://QPS-PROGRAMMESCHEDULEBUSINESSSERVICE
+episodesBusinessServiceUrl: http://INVENTORYBUSINESSSERVICE-V1
+programScheduleBusinessServiceUrl: http://QPS-ProgrammeScheduleBusinessService

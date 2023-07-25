@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+  client:
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+           
+sponsorshipCreditsDomainUrl: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+sponsorshipCreditsBusinessUrl: http://SPONSORSHIPCREDITSBUSINESSSERVICE-V1

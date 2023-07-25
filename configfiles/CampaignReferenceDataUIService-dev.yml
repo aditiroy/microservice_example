@@ -1,0 +1,21 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+onlinePackageDomainService: http://OnlinePackageDomainService/package
+onlinePackageBusinessService: http://OnlinePackageBusinessService
+onlineCampaignBusinessURL: http://OnlineCampaignBusinessService
+onlineCampaignDomainURL: http://OnlineCampaignDomainService
+onlineCampaignDomainService: http://OnlineCampaignDomainService
+linearCampaignDomainService: http://CAMPAIGNMANAGEMENTBS
+agreementService: http://AgreementService
+promotionProductTypesDomainUrl: http://MAINTAINPROMOTIONSTRATEGYDOMAINSERVICE
+campaignService: http://CAMPAIGNDOMAINSERVICE-V1
+campaignBusinessService: http://CAMPAIGNBUSINESSSERVICE-V1
+agreementBusinessService: http://AGREEMENTBUSINESSSERVICE
+commercialcampaignService: http://CommercialCampaignDomainService-V1 
+partnershipCampaignDomainServiceUrl: http://PartnershipCampaignDomainService-V1
+onlinePackageBusinessURL: http://OnlinePackageBusinessService

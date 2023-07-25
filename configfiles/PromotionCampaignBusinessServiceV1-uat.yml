@@ -1,0 +1,34 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+---
+
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+audienceDomainserviceUrl: http://AUDIENCEDOMAINSERVICE
+onlinepackageDomainServiceUrl: http://ONLINEPACKAGEDOMAINSERVICE
+promotionDomainUrl: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+trailCopyDomainServiceUrl: http://TRAILCOPYDOMAINSERVICE
+trailDomainServiceUrl: http://TRAILDOMAINSERVICE
+maintainPromotionStrategyBusinessServiceUrl: http://MAINTAINPROMOTIONSSTRATEGYBUSINESSSERVICE
+episodebusinessurl: http://QPSEPISODESBUSINESSSERVICE
+promostrategydomainUrl: http://MAINTAINPROMOTIONSTRATEGYDOMAINSERVICE
+trailBusinessServiceUrl: http://TRAILBUSINESSSERVICE
+mailfrom: system
+fromName: fromName
+mailto: sindgis@hcl.com,saubhagya.s@hcl.com,lakshmipathip@hcl.com,praveennp@hcl.com,sameena.m@hcl.com
+toName: toName
+destinationTopicMail: c4_adsales_email
+activeMQUrl: tcp://fcr-v-esbtest01:61629
+activeMqUser: salesmquser
+activeMqPassword: 7oXlgP4NcgsaDY
+adServerUrl: http://localhost:8098
+promoCampaignRoleName: Media Planner
+com.channel4.mint.platFormDomainHost: http://PlatformDomainService
+com.channel4.mint.promoStartegyBusinessHost: http://MAINTAINPROMOTIONSSTRATEGYBUSINESSSERVICE
+com.channel4.mint.campaignDomainHost: http://CampaignDomainService-V1
+destinationTopicAdserver: T_ADSERVER
+productdomainurl: http://PRODUCTDOMAINSERVICE
+lineItemTypeVod: VoD

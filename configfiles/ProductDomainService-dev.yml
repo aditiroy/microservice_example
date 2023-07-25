@@ -1,0 +1,25 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+         
+domain: Commodity           
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1
+        username: COM_OWNER
+        password: P0l0mint
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+            show_sql: true
+advertiserUrl : http://CompanyDomainService/companies?search=isadvertiser[eq]true

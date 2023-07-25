@@ -1,0 +1,16 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+
+agreementServiceUrl : http://AgreementService/
+companyDomainServiceUrl : http://CompanyDomainService
+revenueSetUrl: http://RevenueSetApiService
+agrpricingaudiencedomainserviceurl: http://AGRPRICINGAUDIENCEDOMAINSERVICE
+agreementUrl: http://AGREEMENTSERVICE
+campaignService: http://CAMPAIGNDOMAINSERVICE-V1
+bpgServiceUrl: http://BPGSERVICE
+agreemetBusinessUrl: http://AGREEMENTBUSINESSSERVICE
+reconciliatorDomainService : http://RECONCILIATORDOMAINSERVICE

@@ -1,0 +1,44 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+           
+commercialBreakBusinessUrl: http://CommercialBreakBusinessService
+channelDomainServiceUrl: http://ChannelsDomainService
+programmeScheduleBusinessUrl: http://QPS-ProgrammeScheduleBusinessService
+commercialBreakDomainUrl: http://CommercialBreakDomainService
+
+airtimeStatusDomainUrl : http://AirtimeStatusDomainService
+qpsJunctionBusinessServiceUrl : http://QpsJunctionBusinessService
+qpsJunctionBusinessUrl: http://QpsJunctionBusinessService
+programScheduleDomainServiceUrl : http://QPS-ProgramScheduleDomainService
+programmeScheduleDomainUrl: http://QPS-ProgramScheduleDomainService
+QpsEpisodesBusinessService: http://QPSEPISODESBUSINESSSERVICE
+QpsScheduleEpisodeService: http://QPSSCHEDULEEPISODESERVICE
+spotsBusinessServiceUrl: http://SPOTSBUSINESSSERVICE-V1
+reconcillationBusinessService: http://RECONCILIATIONBUSINESSSERVICE-V1
+slclBusinessService: http://SlClBusinessService-V1
+commercialBreak: COMMERCIAL
+lftBreakType: LFTELESHOPPINGBREAK
+planned: PLANNED
+isRatingRequired: ISRATINGREQUIRED
+aiRTimeStatus: AIRTIMESTATUS
+hiddenToSales: Hidden to Sales
+sfTeleshoppingSL: SFTELESHOPPINGSL
+spotSL: SPOTSL
+distributionType: CHANNEL
+
+commercialbreakStartTimeFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+timeFormat: HH:mm:ss
+dateFormat: yyyy-MM-dd
+scheduleGroupTypeFilterCommercial: COMMERCIAL,LFTELESHOPPINGBREAK
+scheduleGroupTypeFilterDepth: scheduleGroupTypeFilter
+findNextPreviousHoursDurarion: 2
+
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+destinationTopicOptimizedBreaks: C4.MINT.TOPIC.OPTIMIZEDBREAKS
+destinationTopicModelledBreaks:  C4.MINT.TOPIC.CREATEMODELLEDBREAKS

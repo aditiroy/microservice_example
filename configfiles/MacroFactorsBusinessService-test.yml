@@ -1,0 +1,11 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+
+macroFactorDetailsUrl: http://MacroFactorsDomainService
+audienceServiceUrl: http://AUDIENCEVIEW
+channelSetServiceUrl: http://CHANNELSETSERVICE
+securityServiceUrl : http://SECURITYSERVER/users

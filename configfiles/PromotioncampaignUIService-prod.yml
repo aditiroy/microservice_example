@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+       
+promocampaignDomainUrl: http://PROMOTIONCAMPAIGNDOMAINSERVICE
+onlinepackageDomainUrl: http://ONLINEPACKAGEDOMAINSERVICE
+promocampaignBussinessUrl : http://PROMOTIONCAMPAIGNBUSINESSSERVICE
+teamDaoServiceUrl: http://TEAMDAOSERVICE
+qpsScheduleEpisodeService: http://QPSSCHEDULEEPISODESERVICE
+promoCampaignRoleName: UR_MediaPlanningManager
+platformDomainUrl: http://PlatformDomainService

@@ -1,0 +1,17 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+scheduledepisodesUrl: http://QpsScheduleEpisodeService/scheduledepisodes
+seriesC4categoriesUrl: http://QpsScheduleEpisodeService/series
+programScheduleDomainUri : http://QPS-ProgramScheduleDomainService
+channelSetUri : http://ChannelSetService
+programmeSchdeuleBusinessService: http://QPS-PROGRAMMESCHEDULEBUSINESSSERVICE
+qpsScheduleBusinessService: http://QpsScheduleEpisodeService

@@ -1,0 +1,18 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+revenueSetUrl: http://RevenueSetApiService/revenuesets
+userUrl: http://SECURITYSERVER/users
+channelSetUrl: http://ChannelsDomainService/channelsets/
+baseUrl: http://RevenueSetApiService/
+revenueTypeUrl: http://RevenueSetApiService/revenuetypes
+reportingGroupsURL : http://MAINTAIN-REPORTING-STATION-DOMAIN-SERVICE/reportingstations/reportinggroups
+role: UR_TradingExecutive,UR_TradingManager
+audienceDomainUrl: http://AGRPRICINGAUDIENCEDOMAINSERVICE
+basepricegroupDomainUrl: http://BPGSERVICE
+revenueSetBusinessUrl: http://REVENUESETAPISERVICE
+agreementBusinessServiceUrl: http://AGREEMENTBUSINESSSERVICE

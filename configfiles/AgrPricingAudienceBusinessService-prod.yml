@@ -1,0 +1,14 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-prodsr1:1111/eureka,http://cft-v-mt-prodsr2:1112/eureka
+---          
+agrPricingAudienceDomainServiceUrl: http://AgrpricingAudienceDomainService
+bpgServiceUrl: http://BPGService
+agreementServiceUrl: http://AgreementService
+audienceDomainServiceUrl: http://AudienceDomainService
+revenueSetDomainServiceUrl: http://REVENUESETAPISERVICE
+channelDomainServiceUrl: http://CHANNELSDOMAINSERVICE
+agrPricingAudienceBusinessServiceUrl: http://AGRPRICINGAUDIENCEBUSINESSSERVICE

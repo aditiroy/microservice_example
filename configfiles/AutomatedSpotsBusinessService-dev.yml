@@ -1,0 +1,62 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+      
+campaignBusinessService: http://CampaignBusinessService-V1
+channelsDomainService: http://ChannelsDomainService
+commercialBreakBusinessURL : http://CommercialBreakBusinessService
+commercialCampaignDomainService: http://CommercialCampaignDomainService-V1
+commercialBreakDomainService: http://CommercialBreakDomainService
+CommodityDomainServiceURL : http://CommodityDomainService
+commercialInventoryUrl: http://COMMERCIALINVENTORYDOMAINSERVICE
+campaignDomainUrl: http://CAMPAIGNDOMAINSERVICE-V1
+destinationQueueSpotSolution: Promo.Q
+fixedRate : 100000
+spotBusinessBookSpotUrl: http://SPOTSBUSINESSSERVICE-V1/spots
+destinationQueueAutomated : c4_automated_book_spots_queue
+mailfrom: mintadmin@channel4.co.uk
+technicalErrorMailTo: roshan_sh@hcl.com,rashmi.gupta@hcl.com
+mailSubjectBookSpotTechnicalError: Automated spot booking failed - system error
+mailTemplateSpotBookTechnicalError: "Automated spot booking failed for the following request. Please contact Support and Maintenance team. \n Date: <date-from> to <date-to> \n Channels:  <channel-list> \n Reason: <failure-reason>"
+mailSubjectBookSpot: Automated Book Spot Reason
+mailTemplateSpotBook: "Spot booked successfully- Campaign Month No of Spots Booked \n <successfull-spot> \n The following spot could not be booked: \n Campaign Month Channel Date Time Length Failure Reason \n <failed-spot>"
+destinationQueueMail:   c4_adsales_email
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123  
+spotDomainServiceUrl: http://SPOTSDOMAINSERVICE-V1
+getPrevAndNextCommercialBreakMuleUrl: http://appservice.int.channel4.local:9157/delivery/api/spots/automated/commercialBreaks/nextAndPrevious?commercialBreakId=
+existanceCliSpotsDomainUrl: http://SPOTSDOMAINSERVICE-V1/spots/validation/existence
+destinationQueueSequence: qqqqqqqqqqqqqqqqqqqqqqqq
+inventoryDomainService: http://INVENTORYDOMAINSERVICE-V1  
+commercialInventoryBusinessUrl: http://COMMERCIALINVENTORYBUSINESS 
+inventoryDomainUrl: http://InventoryDomainService-V1        
+automatedSpotsBusinessServiceGetCliDetails: http://AutomatedSpotsBusinessService/getCLIDetails
+automatedSpotsBusinessServiceGetCommercialBreaks: http://AutomatedSpotsBusinessService/getcommercialbreaks
+mailtype: Need to check 
+audianceDomainServiceUrl: http://AUDIENCEDOMAINSERVICE
+regionDomainServiceUrl: http://REGIONDOMAINSERVICE
+productsDomainServiceUrl: http://PRODUCTDOMAINSERVICE
+commercialBreakDomainUrl: 
+audienceDomainServiceURL: 
+automatedSpotDomainServiceUrl: http://AUTOMATEDSPOTDOMAINSERVICE-V1
+spotBusinessServiceUrl: http://SPOTSBUSINESSSERVICE-V1
+camgenRunSolutionPath: /mint/data/camgen/solution/20160714/73577/2016071404007/
+fileExtension: .csv
+advanceRequestDaysCount : 7
+manualIterations: 15
+camgenRunQueue : camgenRunQueue
+Authorization : Bearer eyJhbGciOiJub25lIn0.eyJVc2VySUQiOiJtaW50dXNlcjMiLCJVc2VyUmVmTm8iOjI2LCJGaXJzdE5hbWUiOiJtaW50dXNlcjMiLCJTdXJuYW1lIjoiIiwicm9sZXMiOlsiVVJfU2VuaW9yVHJhZGVyIiwiTWludC1Xb3JraW5nIFNhbGVzIEV4ZWN1dGl2ZSIsIlVSX1RyYW5zYWN0aW9uYWxGaW5hbmNlTWFuYWdlciIsIlVSX1dvcmtpbmdTYWxlc0V4ZWN1dGl2ZSIsIlVSX1JldmVudWVTZXRPd25lciIsIlVSX0FnZW5jeVNhbGVzTWFuYWdlciIsIlVSX1RyYWRlciJdLCJpYXQiOjE1MDUzNjQ4NTZ9.
+PrivilegeCode : 100
+BusinessEntityCode : 100
+mockDataLocation : /mint/data/camgen/mock
+qCamgenSolutionReceive : Q_CAMGEN_SOLUTION_RECEIVE
+CommodityBusinessService : http://COMMODITYBUSINESSSERVICE
+qCamgenSolutionProcess : Q_CAMGEN_SOLUTION_PROCESS

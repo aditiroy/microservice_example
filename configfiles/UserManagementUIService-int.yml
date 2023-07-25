@@ -1,0 +1,11 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+           
+usermanagementDomainService: http://UserManagementDomainService
+mintSecurityService: http://SECURITYSERVER:9010
+usermanagementBusinessService: http://USERMANAGEMENTBUSINESSSERVICE
+channelServiceUrl: http://CHANNELSDOMAINSERVICE

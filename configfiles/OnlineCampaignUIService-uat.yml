@@ -1,0 +1,10 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+           
+onlineCampaignBusinessURL: http://OnlineCampaignBusinessService
+onlineCampaignDomainURL: http://OnlineCampaignDomainService
+adserverDomainUrl: http://ADSERVERDOMAINSERVICE

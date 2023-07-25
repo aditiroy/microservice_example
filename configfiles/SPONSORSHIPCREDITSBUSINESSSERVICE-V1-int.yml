@@ -1,0 +1,75 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+---
+
+com.channel4.mint.dateFormat: yyyy-MM-dd
+com.channel4.mint.dataFormatOutput: yyyy-MM-dd 
+com.channel4.mint.sponsorshipcredits.commercialBreakBusinessHost: http://CommercialBreakBusinessService
+com.channel4.mint.sponsorshipcredits.agreementDomainHost: http://AgreementService
+com.channel4.mint.sponsorshipcredits.scheduleEpisodeBusinessHost: http://QpsScheduleEpisodeService
+com.channel4.mint.sponsorshipcredits.productDomainHost: http://ProductDomainService
+com.channel4.mint.sponsorshipcredits.companyDomaineHost: http://CompanyDomainService
+com.channel4.mint.sponsorshipcredits.sponsorshipCreditAmendDomainHost: http://SponsorshipCreditsDomainService-V1
+com.channel4.mint.sponsorshipcredits.sponsorshipCreditMuleService: http://appservice.int.channel4.local:9153/delivery/api/sponsorship
+com.channel4.mint.sponsorshipcredits.audienceDomainHost: http://AudienceDomainService
+com.channel4.mint.sponsorshipcredits.partnershipDomainHost: http://PartnershipCampaignDomainService-V1
+com.channel4.mint.sponsorshipcredits.campaignDomainHost: http://CampaignDomainService-V1
+com.channel4.mint.sponsorshipcredits.channelDomainHost: http://ChannelsDomainService
+
+---
+
+com.channel4.mint.scheduledEpisodeUrl : http://QPSSCHEDULEEPISODESERVICE/scheduledepisodes?
+com.channel4.mint.qCreditsAmendCreditMonth : Q_CREDITS_AMEND_CREDIT_MONTH
+com.channel4.mint.tCreditsMarkUnimarkEpisodes : T_CREDITS_MARK_UNIMARK_EPISODES
+com.channel4.mint.channelDomainServiceHost : http://CHANNELSDOMAINSERVICE
+com.channel4.mint.activeMQUrl : tcp://fcr-v-esbint01:61621
+com.channel4.mint.activeMqUser : c4aspc
+com.channel4.mint.activeMqPassword : Cmagic123
+sponserShipDomainServiceUrl: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+
+---
+
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+T_CREDITS_MARK_UNMARK_EPISODES: T_CREDITS_MARK_UNMARK_EPISODES
+Q_CREDITS_AMEND_PATTERN: Q_CREDITS_AMEND_PATTERN
+sponsorShipCreditDomainService: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+scheduledEpisodeBusinessService: http://QPSSCHEDULEEPISODESERVICE
+partnershipCampignDomainServiceService: http://PARTNERSHIPCAMPAIGNDOMAINSERVICE-V1
+channelDomainService: http://CHANNELSDOMAINSERVICE
+muleService: http://COMMERCIALBREAKUISERVICE
+commercialBreakBusinessService: http://COMMERCIALBREAKBUSINESSSERVICE
+programmeScheduledDomainService: http://QPS-PROGRAMSCHEDULEDOMAINSERVICE
+copyBusinessService: http://COPYBUSINESSSERVICE 
+
+com.channel4.mint.sponsorshipcredits.sponsorshipCreditAmendBusinessHost: http://SPONSORSHIPCREDITSBUSINESSSERVICE-V1 
+rotationDomainServiceUrl: http://ROTATIONDOMAINSERVICE
+copyDomainService: http://COPYDOMAINSERVICE 
+sponsorshipCreditsBusinessUrl: http://SPONSORSHIPCREDITSBUSINESSSERVICE-V1
+---
+regularNotificationMessageSuccessSubject : Notification for regular credit pattern generated successfully for $channel for the Transmission Date Range $startDate to $endDate .
+regularNotificationMessageSuccessBody : Regular credit pattern can be successfully generated for $channel for $startDate  to $endDate and Version $version .
+regularNotificationMessageFailureSubject : Notification for regular credit pattern was not generated for $channel for the Transmission Date $startDate .
+regularNotificationMessageFailureBody : Regular credit pattern cannot be generated for $channel for the Transmission Date $startDate as the final credit pattern has been sent for this date .
+finalNotificationMessageSuccessSubject : Notification for final credit pattern for $channel for the Transmission Date $startDate.
+finalNotificationMessageSuccessBody : The final credit pattern can be successfully generated for $channel for Transmission Date $startDate and Version $version.
+finalNotificationMessageFailureSubject : Notification for final credit pattern was not generated for $channel for the Transmission Date $startDate .
+finalNotificationMessageFailureBody : Final credit pattern cannot be generated for $channel for the Transmission Date $startDate.
+pushlishSponsorShipCreditQueue : T_EMAIL
+channelPlaceHolder : $channel
+startDatePlaceHolder : $startDate
+endDatePlaceHolder : $endDate
+versionPlaceHolder : $version
+channelDomainService : http://CHANNELSDOMAINSERVICE
+processId : 21
+inventoryBusinessService: http://INVENTORYBUSINESSSERVICE-V1
+
+simpleSetPattern: Simple Pattern
+ratioPattern: RATIO_P
+standardPattern: STD_P
+sequencePattern: SEQ_P

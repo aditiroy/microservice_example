@@ -1,0 +1,53 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+productDomainServiceUrl: http://ProductDomainService
+rotationDomainServiceUrl: http://RotationDomainService
+channelDomainServiceUrl: http://ChannelsDomainService
+copyDomainServiceUrl: http://CopyDomainService
+spotsBusinessService: http://SPOTSBUSINESSSERVICE-V1
+commercialCampaignDomainServiceUrl: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+deliveryRefernceUiServiceUrl: http://DELIVERYREFERENCEDATAUISERVICE-V1
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+timeOut: 5000
+fixedRateJMS: 1800000
+notesToSalesTopic: T_EMAIL
+criApiServiceUrl: http://CRIAPISERVICE
+approvalDomainServiceUri: http://APPROVALDOMAINSERVICE-V1
+spotsDomainServiceUri: http://SPOTSDOMAINSERVICE-V1
+cRIApiServiceUri: http://CRIAPISERVICE
+copyDomainService: http://COPYDOMAINSERVICE
+copyBusinessService: http://COPYBUSINESSSERVICE
+campaignBusinessService: http://CAMPAIGNBUSINESSSERVICE-V1
+k2workFlowUser : SVCK2MINTMULEUSER 
+k2workFlowPassword : Password1
+k2workFlowDomain : channel4
+k2workFlowEnv : k2-workspace-int02
+criK2Service: http://k2-server-uat:8020/copyrotationinstruction/
+deliveryDomainServiceUri: http://DELIVERYDOMAINSERVICE-V1
+agreementDomainService: http://AGREEMENTSERVICE
+campaignDomainService: http://CAMPAIGNDOMAINSERVICE-V1
+sponsorshipCreditsBusinessService: http://SPONSORSHIPCREDITSBUSINESSSERVICE-V1
+sponsorshipDomainService: http://SPONSORSHIPDOMAINSERVICE-V1
+sponsorshipCreditsDomainService: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1
+templateQueue : Q_SPONSORSHIP_ROTATION_TEMPLATE
+clockQueue : Q_SPONSORSHIP_ROTATION_CLOCK
+scheduledEpisodeBusinessService : http://QpsScheduleEpisodeService
+inBound: 1
+outBound: 2
+sequenceTemplate: SQ
+standardtemplate: ST
+summarytemplate: CS
+detailtemplate: CD
+rotationtemplate: RT
+programmeIn: PGIN
+programmeOut: PGOUT
+deliveryDomainServiceUrl : http://DELIVERYDOMAINSERVICE-V1
+partnershipCampaignDomainServiceUrl : http://PARTNERSHIPCAMPAIGNDOMAINSERVICE-V1
+distributionReferenceDataUiService : http://DISTRIBUTIONREFERENCEDATAUISERVICE

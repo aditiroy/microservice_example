@@ -1,0 +1,18 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+---
+
+forecastDomainServiceUrl: http://FORECASTDEFINITIONSERVICE
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+
+queue.forecastRequest : queue.runForecastRequestQ
+queue.insertionOrder : queue.insertionOrder
+activeMqUser : c4aspc
+activeMqPassword : Cmagic123
+aciveMqUrl : tcp://fcr-v-esbtest01:61621
+
+

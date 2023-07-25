@@ -1,0 +1,20 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+          
+domain: Approval                
+spring:
+  datasource:
+        url: jdbc:oracle:thin:@C-MNT-TSTORA01:1521:MNTCT1A
+        username: APP_USER
+        password: AppT3stU
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect           

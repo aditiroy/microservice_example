@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+
+automatedSpotDomainService: http://AUTOMATEDSPOTDOMAINSERVICE-V1
+spotsBusinessService: http://SPOTSBUSINESSSERVICE-V1

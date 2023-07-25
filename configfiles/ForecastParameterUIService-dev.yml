@@ -1,0 +1,13 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+forecastParamUri : http://ForecastDefinitionService/forecastparameter
+channelSetServiceUrl : http://CHANNELSETSERVICE
+audienceServiceUrl : http://AUDIENCEVIEW
+forecastDomainServiceUrl: http://FORECASTDEFINITIONSERVICE
+forecastBusinessServiceUrl: http://FORECASTBUSINESSSERVICE
+channelsetshierarchyUrl: http://ChannelsDomainService

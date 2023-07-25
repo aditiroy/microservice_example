@@ -1,0 +1,26 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+destinationQueue: PROMOSTAGE.Q
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+corePoolSize : 70
+maxPoolSize : 100
+queueCapacity : 400000
+fixedRate : 100000 
+sucessMsg : Success
+failureMsg: failure
+promotionInventoryDomainServiceURL: http://PromoInvCalculationsDomainService-V1
+inventoryDomainServiceURL : http://INVENTORYDOMAINSERVICE-V1
+inventoryBusinessServiceURL : http://INVENTORYBUSINESSSERVICE-V1
+inventoryQueue : T_INVP
+fixedRateJMS : 10000

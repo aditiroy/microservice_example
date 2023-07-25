@@ -1,0 +1,51 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka, http://cft-v-mt-intsr1:1112/eureka
+---
+spring:
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+            
+
+com.channel4.mint.qps.externalasset.externalAssetHost: http://appservice.int.channel4.local:9138/adsales/qpsexternalassetservice/api
+com.channel4.mint.qps.pirate.pirateHost: http://appservice.int.channel4.local:9137/adsales/qpspirateservice/api
+com.channel4.mint.qps.singleschedule.singleScheduleHost: http://appservice.int.channel4.local:9136/adsales/qpssinglescheduleservice/api
+com.channel4.mint.qps.programScheduleDomain.programScheduleDomainServiceHost: http://QPS-ProgramScheduleDomainService
+com.channel4.mint.qps.junction.audienceHost: http://AUDIENCEVIEW
+com.channel4.mint.qps.programScheduleDomain.efficiencyDomainServiceHost: http://Qps-EfficiencyTargetDomainService
+
+com.channel4.mint.qps.scheduleValue: schedule
+com.channel4.mint.qps.uktv: Uk Tv
+com.channel4.mint.qps.scheduleGroupChannelType: Channel
+com.channel4.mint.qps.scheduleGroupProgramme: PROGRAMME  
+com.channel4.mint.qps.scheduleGroupCommercial: COMMERCIAL
+com.channel4.mint.qps.dateFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+com.channel4.mint.qps.defaultStartTime: 00:00:00
+com.channel4.mint.qps.defaultEndTime: "23:59:59"
+com.channel4.mint.qps.dataFormatOutput: yyyy-MM-dd
+com.channel4.mint.qps.timeFormat: HH:mm:ss
+# In Hour
+com.channel4.mint.qps.specificJunctionIntervalInHour: 1
+# Three Minutes
+com.channel4.mint.qps.nearestJunctionInSeconds: 180
+
+
+distributionType: CHANNEL
+scheduleGroupCommercialTypeId: 3
+scheduleGroupCommercialType: COMMERCIAL
+createScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/createschedulegroup
+modifyScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/modifyschedulegroup
+deleteScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/deleteScheduleGroups
+channelDomainServiceUrl : http://ChannelsDomainService
+regionDomainServiceUrl : http://RegionDomainService
+com.channel4.mint.qps.singleschedule.singleScheduleHostTemp: http://appservice.int.channel4.local:9242/inventory/getsingleschedulegroup
+com.channel4.mint.qps.singleschedule.eventTypeHost: http://appservice.int.channel4.local:9242
+scheduleModeDomainService : http://QpsScheduleModeDomainService

@@ -1,0 +1,35 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---
+domain: Inventory
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1
+        username: INV_OWNER
+        password: P0l0mint
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+---
+impactValidationUrl: http://IMPACTSBUSINESSSERVICE/validateimpactsstage
+universeValidationUrl: http://IMPACTSBUSINESSSERVICE/validateUniverseStage
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+destinationQueue: ImpactsLoadValidator.Q
+mailQueue : EmailQueue
+chunkSize : 1000
+fileLocationQueue : Inventory.ImpactsLoader.Q
+tamStatuQueue : Inventory.Tam.status.data.Q
+barbStatusQueue : Inventory.Barb.status.data.Q

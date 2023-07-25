@@ -1,0 +1,11 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+           
+cpgDomainUrl: http://CPGDomainService
+cpgBussinessUrl: http://AssetBusinessService
+page : 0
+count : 1000

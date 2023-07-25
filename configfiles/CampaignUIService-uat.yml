@@ -1,0 +1,24 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+           
+campaignLinesUrl : http://CampaignManagementBS/campaignLine/
+approvalViewUrl : http://APPROVAL-VIEW-SERVICE-MINT
+audienceUrl : http://AUDIENCEVIEW/audiences/
+linearCampaignUrl: http://CampaignManagementBS/linearcampaign/
+channelSetUrl : http://ChannelSetService
+productServiceURL : http://Product-Service-Mint/products
+advertiserUrl: http://COMPANYSERVICE
+audiences: 1:ABC1AD,2:ADULT,4:ABC1 Adults 16-44
+statusUrl: http://CampaignManagementBS
+ammendBaseUrl: http://CampaignManagementBS/linearcampaign/
+basicInfoURL : http://AGREEMENTSERVICE/agreements
+userUrl: http://SECURITYSERVER/users
+campaignListUrl: http://CampaignManagementBS/campaigndetail/campaignlist
+baseUrl: http://CampaignManagementBS/
+audienceDetailURL: http://LinearCampaignBusinessService/linearcampaign/
+campaignDomainUrl: http://CAMPAIGNDOMAINSERVICE-V1
+campaignBusinessUrl: http://CAMPAIGNBUSINESSSERVICE-V1

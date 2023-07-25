@@ -1,0 +1,17 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+spotsDomainServiceUrl: http://SPOTSDOMAINSERVICE-V1
+spotsBusinessServiceUrl: http://SpotsBusinessService-V1      
+campaignBusinessServiceUrl: http://CampaignBusinessService-V1
+campaignDomainServiceUrl: http://CAMPAIGNDOMAINSERVICE-V1
+channelDomainServiceUrl: http://CHANNELSDOMAINSERVICE
+reconcillationBusinessService: http://CHANNELSDOMAINSERVICE

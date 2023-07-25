@@ -1,0 +1,99 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+           
+channelDomainServiceUrl: http://ChannelsDomainService
+qpsjunctionbusinessserviceUrl: http://QpsJunctionBusinessService
+airtimeStatusDomainServiceUrl: http://AirtimeStatusDomainService
+agrpricingAudienceDomainService: http://AgrpricingAudienceDomainService
+networkLevelTxId: 0
+scheduleGroupTypeLFTBreak: test
+eventTypeSpot: SPOT
+eventTypeSFT: SFTSPOT
+thresholdMinEfficiency: 0
+commercialBreakDomainUrl: http://CommercialBreakDomainService
+programmescheduledomainservice: http://QPS-ProgramScheduleDomainService
+
+
+com.channel4.mint.qps.externalasset.externalAssetHost: http://appservice.int.channel4.local:9138/adsales/qpsexternalassetservice/api
+com.channel4.mint.qps.pirate.pirateHost: http://appservice.int.channel4.local:9137/adsales/qpspirateservice/api
+com.channel4.mint.qps.actual.actualHost: http://appservice.int.channel4.local:9242/inventory/api
+com.channel4.mint.qps.singleschedule.singleScheduleHost: http://appservice.int.channel4.local:9136/adsales/qpssinglescheduleservice/api
+com.channel4.mint.qps.programScheduleDomain.programScheduleDomainServiceHost: http://QPS-ProgramScheduleDomainService
+com.channel4.mint.qps.junction.audienceHost: http://AUDIENCEVIEW
+com.channel4.mint.qps.programScheduleDomain.efficiencyDomainServiceHost: http://Qps-EfficiencyTargetDomainService
+
+com.channel4.mint.qps.scheduleValue: schedule
+com.channel4.mint.qps.uktv: Uk Tv
+com.channel4.mint.qps.scheduleGroupChannelType: Channel
+com.channel4.mint.qps.scheduleGroupProgramme: PROGRAMME  
+com.channel4.mint.qps.scheduleGroupCommercial: COMMERCIAL
+com.channel4.mint.qps.dateFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+com.channel4.mint.qps.defaultStartTime: 00:00:00
+com.channel4.mint.qps.defaultEndTime: "23:59:59"
+com.channel4.mint.qps.dataFormatOutput: yyyy-MM-dd
+com.channel4.mint.qps.timeFormat: HH:mm:ss
+# In Hour
+com.channel4.mint.qps.specificJunctionIntervalInHour: 1
+# Three Minutes
+com.channel4.mint.qps.nearestJunctionInSeconds: 180
+
+
+distributionType: CHANNEL
+scheduleGroupCommercialTypeId: 3
+scheduleGroupCommercialType: COMMERCIAL
+createScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/createschedulegroup
+modifyScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/modifyschedulegroup
+deleteScheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/singleSchedule/deleteScheduleGroups
+scheduleGroupPirateUrl: http://appservice.int.channel4.local:9242/inventory/schedulegroup
+regionDomainServiceUrl : http://RegionDomainService
+com.channel4.mint.qps.singleschedule.singleScheduleHostTemp: http://appservice.int.channel4.local:9242/inventory/getsingleschedulegroup
+com.channel4.mint.qps.singleschedule.eventTypeHost: http://appservice.int.channel4.local:9242
+commercialbreakStartTimeFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+commercialBreak: COMMERCIAL
+lftBreakType: LFTELESHOPPINGBREAK
+commercialBreakBusinessUrl: http://COMMERCIALBREAKBUSINESSSERVICE
+commercialInventoryBusinessUrl: http://CommercialInventoryBusiness
+threadCount: 10
+sftslConstant: 30000
+planned: PLANNED
+isRatingRequired: ISRATINGREQUIRED
+aiRTimeStatus: AIRTIMESTATUS
+hiddenToSales: Hidden to Sales
+sfTeleshoppingSL: SFTELESHOPPINGSL
+spotSL: SPOTSL
+bseTime: "30:59:59"
+bstTime: "28:59:59"
+otherTime: "29:59:59"
+commercialInventory: http://COMMERCIALINVENTORYDOMAINSERVICE
+
+publishCommercialBreakPatternQueueName: Q_PUBLISH_COMMERCIAL_BREAK_PATTERN
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+spotBookingMuleService: http://appservice.int.channel4.local:9156/delivery/api/spots/automated
+C4 UK: 4,1,3,7,9,10,11,6,5,8,12,14,15,16,17,18
+C4 LON: 1,7,15,16,17,18,6,5,4,3
+C4 MID: 1,9,14,16,17,18,6,5,4,3
+C4 NOR: 1,10,14,15,17,18,6,5,4,3
+C4 SOU: 1,8,15,16,17,14,6,5,4,3
+C4 SCO: 1,11,15,16,18,14,6,5,3
+C4 ULT: 1,11,15,16,18,14,6,5,12
+spotDomainServiceUrl: http://SPOTSDOMAINSERVICE-V1
+commercialServiceMuleUrl: http://appservice.int.channel4.local:9242/inventory
+mailFrom: mailFrom
+fromName: mailFrom
+cancelOpenAirtimeEmailQueue: c4_adsales_email
+breaksAdRatingTeamEmailTo: sindgis@hcl.com,saubhagya.s@hcl.com,lakshmipathip@hcl.com,praveennp@hcl.com,sameena.m@hcl.com
+teleshoppingUserGroupEmailTo: sindgis@hcl.com,saubhagya.s@hcl.com,lakshmipathip@hcl.com,praveennp@hcl.com,sameena.m@hcl.com
+mintBusinessTeamEmailFrom: mintBusinessTeamEmailFrom
+userManagementDomainServiceUrl: http://UserManagementDomainService
+commercialBreakUrl: http://COMMERCIALBREAKDOMAINSERVICE
+scheduleModeDomainService: http://QPSSCHEDULEMODEDOMAINSERVICE

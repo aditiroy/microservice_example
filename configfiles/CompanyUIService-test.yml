@@ -1,0 +1,27 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+
+k2workFlowUser : SVCK2MINTMULEUSER 
+k2workFlowPassword : Password1
+k2workFlowDomain : channel4
+k2workFlowEnv : k2-workspace-test02      
+companyDomainServiceUrl : http://CompanyDomainService
+companyBusinessServiceUrl : http://CompanyBusinessService
+k2CompanyRequestUri : http://k2-workspace-test02/K2Services/REST.SVC/Process/Definitions(RequestManagement_B_MINT.MCO.WKF.ManageRequests)/StartInstance?
+k2WorkiListUri : http://k2-server-test02:8020/api/TaskList?   
+k2ActionUri : http://k2-server-test02:8020/api/ActionTask?
+productServiceUri : http://PRODUCTDOMAINSERVICE
+reconciliatorAccountUrl : http://RECONCILIATORDOMAINSERVICE/reconciliatoraccount
+securityUrl : http://SECURITYSERVER/users
+cariaUrl : http://AUDIENCEUISERVICE
+agreementServiceUrl : http://AgreementService/
+open: OPEN
+approved: APPROVED
+rejected: REJECTED
+processed: PROCESSED
+agency: AGENCY
+advertiser: ADVERTISER

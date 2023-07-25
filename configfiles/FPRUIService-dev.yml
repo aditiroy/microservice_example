@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+fPRUri: http://FPRDomainService
+fprBusinessService : http://FprBusinessService-V1
+assetBusinessServiceUri : http://ASSETBUSINESSSERVICE
+channelsDomainUri : http://CHANNELSDOMAINSERVICE
+sameAsTarget : Same As Target
+sameAsTargetId : 0
+sameAsExternalId : 0

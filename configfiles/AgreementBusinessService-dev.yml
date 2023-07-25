@@ -1,0 +1,31 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---
+
+priceHistoryQueue : Q_PRICE_HISTORY
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+commercialInventoryDomainServiceUrl: http://CommercialInventoryDomainService
+commercialBreakDomainServiceUrl: http://CommercialBreakDomainService
+basePriceGroupDomainServiceUrl: http://BPGService
+agrpricingDomainServiceUrl: http://AgrpricingAudienceDomainService
+spotDomainServiceUrl: http://SpotsDomainService-V1
+audienceUrl: http://AUDIENCEDOMAINSERVICE
+commercialInventoryBusinessUrl: http://COMMERCIALINVENTORYBUSINESS
+userManagementDomainServiceUrl: http://USERMANAGEMENTDOMAINSERVICE
+applicationManagementService : http://ApplicationManagementService-V1
+campaignDomainService : http://CAMPAIGNDOMAINSERVICE-V1
+onlinePackageDomainService : http://ONLINEPACKAGEDOMAINSERVICE
+activeMqPassword: Cmagic123
+calculateMonthVar: 3
+reconcilatorDomainUrl: http://RECONCILIATORDOMAINSERVICE
+inventoryDomainService : http://INVENTORYDOMAINSERVICE-V1
+reconciliatorDomainServiceUrl: http://RECONCILIATORDOMAINSERVICE
+destinationTopicMail: T_EMAIL
+channelSet: Channel_Set
+channelGroup: CHANNEL_GROUP

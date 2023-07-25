@@ -1,0 +1,13 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+           
+automatedSpotDomainService: http://AutomatedSpotDomainService-V1
+automatedSpotBusinessService: http://AutomatedSpotsBusinessService
+audienceDomainServiceUrl: http://AudienceDomainService
+channelDomainServiceUrl: http://ChannelsDomainService
+spotsBusinessServiceUrl: http://SpotsBusinessService-V1
+manualRequestType: Manual

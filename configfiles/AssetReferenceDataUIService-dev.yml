@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+copiesUrl: http://CopyDomainService/copies
+trailSetDomainService: http://TrailSetDomainService
+trailCopyUrl: http://TRAILCOPYDOMAINSERVICE
+trailBusinessUrl : http://TRAILCOPYBUSINESSSERVICE
+trailSetBusinessUrl : http://TRAILSETBUSINESSSERVICE
+rotationDomainService: http://ROTATIONDOMAINSERVICE
+count: 1000
+copyBusinessService: http://COPYBUSINESSSERVICE

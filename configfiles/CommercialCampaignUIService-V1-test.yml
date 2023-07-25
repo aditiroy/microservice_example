@@ -1,0 +1,13 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+           
+campaignBusinessUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+copyDomainService: http://COPYDOMAINSERVICE
+commercialCampaignDomainUrl: http://CommercialCampaignDomainService-V1
+campaignDomainUrl: http://CAMPAIGNDOMAINSERVICE-V1
+approvalBusinesUrl: http://APPROVALBUSINESSSERVICE-V1
+spotsBusinessServiceUrl: http://SpotsBusinessService-V1

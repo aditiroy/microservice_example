@@ -1,0 +1,28 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1
+        username: INV_OWNER
+        password: P0l0mint
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+---
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+destinationQueue: CanonicalTranslator.Q
+channelSetUrl: http://CHANNELSDOMAINSERVICE/channelsetshierarchy
+mailQueue : EmailQueue
+chunkSize : 1000

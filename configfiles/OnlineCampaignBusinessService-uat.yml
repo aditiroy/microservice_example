@@ -1,0 +1,32 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+           
+securityAuthenticationAuthorisationService: http://SECURITYSERVER
+userManagementDomainService: http://USERMANAGEMENTDOMAINSERVICE
+mockJWT: eyJhbGciOiJub25lIn0.eyJVc2VySUQiOiJtaW50dXNlcjEiLCJVc2VyUmVmTm8iOjI0LCJGaXJzdE5hbWUiOiJtaW50dXNlcjEiLCJTdXJuYW1lIjoiIiwicm9sZXMiOlsiVVJfR3JvdXBBZ2VuY3lTYWxlc01hbmFnZXIiLCJVUl9TZW5pb3JUcmFkZXIiLCJNaW50LW93bmVyIiwiVVJfQnVzaW5lc3NTdXBwb3J0IiwiVVJfV29ya2luZ1NhbGVzRXhlY3V0aXZlIiwiVVJfVHJhZmZpY0V4ZWN1dGl2ZSIsIlVSX1JldmVudWVTZXRPd25lciIsIlVSX0FnZW5jeVNhbGVzTWFuYWdlciIsIlVSX1RyYWRlciIsIk1pbnQtR3JvdXAgQWdlbmN5IFNhbGVzIE1hbmFnZXIiXSwiaWF0IjoxNDkyNjIzOTAwfQ.
+productDAOService: http://PRODUCT-DAO-SERVICE-MINT
+agreementService: http://AGREEMENTSERVICE
+companyDAOService: http://COMPANYDAOSERVICE
+
+productDomainService: http://PRODUCTDOMAINSERVICE
+
+companyBusinessServiceUrl: http://CompanyBusinessService
+onlineCampaignDomainUrl: http://OnlineCampaignDomainService/onlinecampaign
+onlineCampaignDomainPostUrl: http://OnlineCampaignDomainService/onlineCampaign
+productserviceUrl: http://PRODUCT-SERVICE-MINT
+onlinePackageBusinessServiceUrl: http://OnlinePackageBusinessService
+platformDomainServiceUrl: http://PlatformDomainService
+adServerDomainServiceUrl: http://AdServerDomainService
+companyDomainServiceUrl: http://CompanyDomainService
+onlineCampaignPricingTypeUrl : http://OnlineCampaignDomainService/onlineCampaign
+outputFileLocation : /mint/data/insertion_orders/
+
+queue.onlinecampaign : queue.onlineCampaign
+queue.insertionOrder : queue.insertionOrder
+activeMqUser : salesmquser
+activeMqPassword : 7oXlgP4NcgsaDY
+activeMQUrl : tcp://fcr-v-esbtest01:61629 

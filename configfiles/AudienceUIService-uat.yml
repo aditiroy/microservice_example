@@ -1,0 +1,20 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+  client:
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+           
+approvalsUrl: http://approvalSetup/approvals
+audiencelistUrl: http://AudienceDomainService/audiencelist
+audienceUrl: http://AudienceDomainService/audience
+audiencesUrl: http://AudienceDomainService/audiences
+audienceDomainUrl: http://AudienceDomainService
+channelSetTxLevelUrl: http://ChannelsDomainService/txlevels
+agreementBusinessServiceUrl: http://AGREEMENTBUSINESSSERVICE
+audienceDetailServiceUrl: http://AUDIENCEDETAILSERVICE

@@ -1,0 +1,17 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+---
+spring:
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+            
+com.channel4.mint.qps.externalasset.externalAssetHost: http://appservice.test.channel4.local:9938/adsales/qpsexternalassetservice/api
+com.channel4.mint.qps.pirate.pirateHost: http://appservice.test.channel4.local:9937/adsales/qpspirateservice/api
+com.channel4.mint.qps.singleschedule.singleScheduleHost: http://appservice.test.channel4.local:9936/adsales/qpssinglescheduleservice/api
+com.channel4.mint.qps.series.dataFormatInput: yyyy-MM-dd'T'HH:mm:ss'Z'
+com.channel4.mint.qps.series.dataFormatOutput: yyyy-MM-dd

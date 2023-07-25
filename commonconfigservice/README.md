@@ -1,0 +1,1 @@
+Configuration Service will be used by all the Micro services to read configurations

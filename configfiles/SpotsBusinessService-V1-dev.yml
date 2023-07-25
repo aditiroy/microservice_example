@@ -1,0 +1,85 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+      
+campaignBusinessService: http://CampaignBusinessService-V1
+channelsDomainService: http://ChannelsDomainService
+commercialBreakBusinessURL : http://CommercialBreakBusinessService
+commercialCampaignDomainService: http://CommercialCampaignDomainService-V1
+commercialBreakDomainService: http://CommercialBreakDomainService
+CommodityDomainServiceURL : http://CommodityDomainService
+campaignReferenceBusinessService: http://CampaignReferenceBusinessService
+productDomainServiceUrl: http://PRODUCTDOMAINSERVICE
+commodityDomainServiceUrl: http://CommodityDomainService
+bookSpotDomainServiceUrl: http://SPOTSDOMAINSERVICE-V1
+spotsDomainService: http://SPOTSDOMAINSERVICE-V1
+soptsMuleService: http://appservice.int.channel4.local:9155
+lftsoptsMuleService: http://appservice.int.channel4.local:9156
+spotsInventoryMuleService: http://appservice.int.channel4.local:9242
+campaignDomainServiceUrl: http://CAMPAIGNDOMAINSERVICE-V1
+audienceDomainUrl: http://AUDIENCEDOMAINSERVICE
+qpsSchedulEdepisodeUrl: http://QPS-SCHEDULEDEPISODEDETAILSUISERVICE
+destinationQueueSpotSolution: c4_automated_book_spots_queue
+qAutomaticCopyAssignMentToSpots : Q_AUTOMATIC_COPY_ASSIGNMENT_TO_SPOTS
+fixedRate : 1000000
+spotBusinessBookSpotUrl: http://SPOTSBUSINESSSERVICE-V1
+mailtype: Need to check 
+mailfrom: System generated Message
+mailSubjectBookSpot: Automated Book Spot Reason
+mailTemplateSpotBook: "Spot booked successfully- Campaign Month No of Spots Booked \n <successfull-spot> \n The following spot could not be booked: \n Campaign Month Channel Date Time Length Failure Reason \n <failed-spot>"
+destinationQueueMail: c4_adsales_email
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+spotTopicName: T_INVP
+fromName: fromName
+mailto: sindgis@hcl.com,saubhagya.s@hcl.com,lakshmipathip@hcl.com,praveennp@hcl.com,sameena.m@hcl.com
+toName: toName
+destinationTopicMail: c4_adsales_email
+threadCount: 30
+com.channel4.mint.productDomainHost: http://ProductDomainService
+endTime: 01
+userManagementDomainServiceUrl: http://UserManagementDomainService
+deliveryDomainServiceUrl: http://DELIVERYDOMAINSERVICE-V1
+copyDomainServiceUrl: http://COPYDOMAINSERVICE
+spotMoveQueue: Q_MOVE_SPOT_COMMERCIAL_BREAK
+spotMoveQueueFixedRate: 3600000
+spotsBusinessService: http://SPOTSBUSINESSSERVICE-V1
+amendSpotsQueue: Q_AMEND_SPOTS
+c4AdsalesInventoryEventsTopic: c4_adsales_inventory_events_topic
+
+agreementBusinessService: http://AgreementBusinessService
+bpgDomainService: http://BPGService
+inventoryDomainService: http://InventoryDomainService-V1
+audienceDetailDomainService: http://AgrpricingAudienceDomainService
+companydomainServiceUrl: http://COMPANYDOMAINSERVICE
+regionDomainService: http://RegionDomainService
+rotationDomainService: http://RotationDomainService
+deliveryDomainService: http://DeliveryDomainService-V1
+copyBusinessService: http://CopyBusinessService
+spotBusinessService: http://SpotsBusinessService-V1
+automaticAssignmentQueue : Q_AUTOMATIC_COPY_ASSIGNMENT_TO_SPOTS
+agreementService: http://AGREEMENTSERVICE
+playListDate: "2018-02-28"
+qpsProgrammeSchedulDomainUrl: http://QPS-PROGRAMSCHEDULEDOMAINSERVICE
+airTimeStatusDomainService: http://AIRTIMESTATUSDOMAINSERVICE
+inventoryBusinessService: http://INVENTORYBUSINESSSERVICE-V1
+jwtToken: Bearer eyJhbGciOiJub25lIn0.eyJVc2VySUQiOiJtaW50dXNlcjMiLCJVc2VyUmVmTm8iOjI2LCJGaXJzdE5hbWUiOiJtaW50dXNlcjMiLCJTdXJuYW1lIjoiIiwicm9sZXMiOlsiVVJfU2VuaW9yVHJhZGVyIiwiTWludC1Xb3JraW5nIFNhbGVzIEV4ZWN1dGl2ZSIsIlVSX1RyYW5zYWN0aW9uYWxGaW5hbmNlTWFuYWdlciIsIlVSX1dvcmtpbmdTYWxlc0V4ZWN1dGl2ZSIsIlVSX1JldmVudWVTZXRPd25lciIsIlVSX0FnZW5jeVNhbGVzTWFuYWdlciIsIlVSX1RyYWRlciJdLCJpYXQiOjE1MDUzNjQ4NTZ9.
+
+spotScheduleQueue: Q_SEND_SPOT_SCHEDULE
+emailTopic: T_EMAIL
+mintUser: mintUser1
+assetReferenceDataUIService: http://ASSETREFERENCEDATAUISERVICE
+spotsBusinessServiceUrl: http://SpotsBusinessService-V1
+qRestoreSpotsSchedule: 250000
+bulkSpotsRestoreSchedule: 350000
+bulkCancelSpotsQueueSchedule: 150000
+LFTspot: 123
+SpotStatus: Limbo

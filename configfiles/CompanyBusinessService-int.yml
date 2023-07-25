@@ -1,0 +1,37 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+
+companyDomainServiceUrl : http://CompanyDomainService
+queue.freewheel : queue.freewheel
+queue.oraclefinance : queue.oraclefinance
+activeMqUser : c4aspc
+activeMqPassword : Cmagic123
+activeMQUrl : tcp://fcr-v-esbint01:61621
+open: OPEN
+approved: APPROVED
+rejected: REJECTED
+processed: PROCESSED
+agency: AGENCY
+advertiser: ADVERTISER
+k2CompanyRequestUri : http://k2-workspace-int02/K2Services/REST.SVC/Process/Definitions(RequestManagement_B_MINT.MCO.WKF.ManageRequests)/StartInstance?
+k2WorkiListUri : http://k2-server-int02:8020/api/TaskList?
+k2workFlowUser : SVCK2MINTMULEUSER 
+k2workFlowPassword : Password1
+k2workFlowDomain : channel4
+k2workFlowEnv : k2-server-int02
+trafficExecutive : UR_TrafficExecutive
+financeExecutive :  UR_TransactionalFinanceManager
+salesExecutive : UR_WorkingSalesExecutive
+mailfrom : mintadmin@channel4.co.uk
+mailto: batra.m@hcl.com
+fromName: Admin
+toName: Zeus ERP
+destinationTopicMail: T_EMAIL
+mailSubject: This is an Automated mail from MINT-Company credit status changes || Manage Proforma
+creditStatusNotificationBody: The credit status of the billing agency <Company Name>  <Company Code> from <Old Status> to <New Status>. Going forward all the campaigns created for the billing agency will be 'Proforma' campaigns"
+billingDomainUrl:  http://BILLINGDOMAINSERVICE-V1
+campaignDomainService: http://CAMPAIGNDOMAINSERVICE-V1

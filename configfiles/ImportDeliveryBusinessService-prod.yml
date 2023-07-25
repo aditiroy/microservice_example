@@ -1,0 +1,10 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+adUnitDomainUrl: http://AdServerDomainService/adunit
+onlineCampaignDomainUrl: http://ONLINECAMPAIGNDOMAINSERVICE
+collectionSize: 1000

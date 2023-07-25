@@ -1,0 +1,12 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+
+adServerDomainServiceUrl : http://AdServerDomainservice
+audienceBusinessServiceUrl : http://AudienceBusinessservice
+channelDomainServiceUrl : http://ChannelsDomainService
+channelSetBusinessUrl : http://ChannelsBusinessService
+regionDomainServiceUrl : http://REGIONDOMAINSERVICE

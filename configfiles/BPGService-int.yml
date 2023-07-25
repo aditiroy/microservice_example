@@ -1,0 +1,32 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+---
+domain: Agreement
+spring:
+  datasource:
+        url: jdbc:oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1
+        username: DEAL_OWNER
+        password: P0l0mint
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        jmx-enabled: true
+        tomcat:
+            max-active: 100
+            max-idle: 5
+            min-idle: 2
+            jmx-enabled: true
+            min-evictable-idle-time-millis: 30000
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format-sql: true
+        dialect: org.hibernate.dialect.Oracle12cDialect
+            

@@ -1,0 +1,38 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+mailFrom: SYSTEM
+tEmail: T_EMAIL
+reconciliationDomainService: http://ReconciliationDomainService-V1
+spotsBusinesService: http://SPOTSBUSINESSSERVICE-V1
+siscMuleFlowService: http://appservice.int.channel4.local:9242/inventory
+reconciliationBusinessService: http://ReconciliationBusinessService-V1
+channelDomainService: http://CHANNELSDOMAINSERVICE
+spotsMuleFlowUrl: http://appservice.int.channel4.local:9155/delivery/api/commercial
+spotsDomainUrl: http://SPOTSDOMAINSERVICE-V1
+commercialBreakBusinessUrl: http://CommercialBreakBusinessService
+commercialBreakMuleUrl: http://appservice.int.channel4.local:9242/inventory
+commercialBreakDomainUrl: http://CommercialBreakDomainService
+preASRunQueue: Q_COMMERCIAL_PREASRUN_IN
+fixedRate: 100000
+qpsJunctionBreakBusinessService: http://QPSJUNCTIONBUSINESSSERVICE
+productDomainService: http://PRODUCTDOMAINSERVICE
+copyDomainUrl: http://COPYDOMAINSERVICE
+reconciliationMuleService: http://appservice.int.channel4.local:9242/inventory/asrunfileprocess/transmissionLog
+transmissionLogFilePath: /mint/data/asrunprocess/transmission
+days: 10
+toEmail: xyz@abc.com
+fromEmail: system
+toName: toName
+emailQueue: T_EMAIL
+companyDomainService: http://COMPANYDOMAINSERVICE
+reconciliationMuleServiceAttributionLog: http://appservice.int.channel4.local:9242/inventory/asrunfileprocess
+attributionFilePath: /mint/data/asrunprocess/attribution

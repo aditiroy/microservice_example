@@ -1,0 +1,12 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---   
+server:
+  port: 9011
+
+approvalMappingDaoServiceUri : http://APPROVALSETUP
+approvalMappingDaoServiceURI: http://approvalSetup/approvals/mapping/

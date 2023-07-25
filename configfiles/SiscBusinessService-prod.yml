@@ -1,0 +1,25 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+
+channelDomainServiceUrl : http://CHANNELSDOMAINSERVICE
+maintaintrailDomainServiceUrl : http://MAINTAINTRAILSLOTDOMAINSERVICE
+commercailBreakDomainServiceUrl : http://COMMERCIALBREAKDOMAINSERVICE
+maintaintrailDomainServiceUrl : http://MAINTAINTRAILSLOTDOMAINSERVICE
+muleUrl : http://appservice.int.channel4.local:9242/inventory/schedulegroup
+validationUrl : http://appservice.int.channel4.local:9242
+trailSlotDuration : 30000
+commrcialBreakDuration : 120000
+endTrailSlot  : END_TrailSlot
+startTrailSlot : START_TrailSlot
+durationOfProgramInMillisecond : 3600000
+junctionDuration : 180000
+program : 0
+commercialBreakId : 3
+trailSlot : 7
+endJunction : 12
+midJunction : 11

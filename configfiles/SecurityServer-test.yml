@@ -1,0 +1,25 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@C-MNT-TSTORA01:1521:MNTCT1A
+    username: APP_OWNER
+    password: AppT3stO
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+serverListAD: DCR-DC04,CFT-DC05,DCR-V-DC06,CFT-V-DC07
+serverPortAD: 389
+serverRootDN: /DC=CHANNEL4,DC=LOCAL
+serverOU: OU=Users,OU=Business
+domainName: channel4.co.uk
+ldapUserName: mintuser1
+ldapPassword: Password1
+searchQueryString: OU=AdSalesRole, OU=Application, OU=User Roles, OU=Business, DC=channel4, DC=local
+userManagementDomainUrl: http://userManagementDomainservice

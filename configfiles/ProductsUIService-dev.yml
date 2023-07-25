@@ -1,0 +1,20 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---           
+k2RequestUrl: http://k2-workspace-int02/K2Services/REST.SVC/Process/Definitions(RequestManagement_B_MINT.MCO.WKF.ManageRequests)/StartInstance?folio=
+k2WorkListUrl: http://k2-server-int02:8020/api/TaskList?RequestType=
+companyServiceUrl: http://CompanyDomainService
+commodityProductParamUri: http://CommodityDomainService
+productsParamUri: http://ProductDomainService
+assetUri: http://AssetBusinessService
+cpgUri: http://CPGDomainService
+k2workFlowUser : SVCK2MINTMULEUSER 
+k2workFlowPassword : Password1
+k2workFlowDomain : channel4
+k2workFlowEnv : k2-workspace-int02
+k2WorkListUpdateUrl: http://k2-server-int02:8020/api/ActionTask?K2SN=
+commodityDomainServiceUrl : http://COMMODITYDOMAINSERVICE

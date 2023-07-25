@@ -1,0 +1,36 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka, http://cft-v-mt-linsbx:1112/eureka
+---
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-DEVORA01:1521:MNTDEV1              
+        username: INV_OWNER
+        password: P0l0mint
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+
+     
+            
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+sourceQueue: CanonicalTranslator.Q
+destinationQueue: BreakAverageRatings.Q
+channelSetUrl: http://CHANNELSDOMAINSERVICE/channelsetshierarchy
+universeRowCount: 50
+threadCount: 40
+timeSlice: 1
+mediaClockStartTime: '0600'
+mediaClockEndTime: '2959'
+deleteRecordCount: 10000
+ratingOutQueue : T_OUT_RATING

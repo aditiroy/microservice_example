@@ -1,0 +1,11 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+adServerDomainUrl: http://AdServerDomainService
+onlinePackageDomainUrl: http://OnlinePackageDomainService
+platformDomainUrl: http://PlatformDomainService
+audienceDomainUrl: http://AudienceDomainService

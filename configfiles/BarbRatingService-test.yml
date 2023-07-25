@@ -1,0 +1,10 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+
+impactRatingServiceUrl: http://RatingService/ratings/Impacts
+universeRatingServiceUrl: http://RatingService/ratings/universe
+billingBusinessServiceURL : http://BillingBusinessService-V1

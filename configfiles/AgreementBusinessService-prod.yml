@@ -1,0 +1,50 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-prodsr1:1111/eureka,http://cft-v-mt-prodsr1:1112/eureka
+---
+
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+audienceDomainserviceUrl: http://AUDIENCEDOMAINSERVICE
+optoutDomainServiceUrl: http://OPTOUTFACTORSDOMAINSERVICE
+ratingServiceUrl: http://RATINGSERVICE 
+agreementUrl:  http://AGREEMENTSERVICE
+commodityDomainServiceUrl: http://CommodityDomainService
+platformBaseUrl: http://PlatformDomainService
+productsParamUri: http://ProductDomainService
+---
+daypartBusinessServiceUrl: http://AGREEMENTBUSINESSSERVICE
+daypartDomainService: http://AGREEMENTSERVICE
+audienceDomainService: http://AUDIENCEDOMAINSERVICE
+channelDomainService: http://CHANNELSDOMAINSERVICE
+companyService: http://COMPANYDOMAINSERVICE
+audienceDomainServiceUrl: http://AGRPRICINGAUDIENCEDOMAINSERVICE
+bpgServiceUrl: http://BPGSERVICE
+agreementBusinessServiceUrl: http://AGREEMENTBUSINESSSERVICE
+commercialInventoryBusinessUrl : http://CommercialInventoryBusiness
+revenueSetDomainServiceUrl: http://RevenueSetApiService
+commercialCampaignDomainServiceUrl: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+campaignBusinessServiceUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+agreementBusinessServiceUrl: http://AgreementBusinessService
+priceHistoryQueue : Q_PRICE_HISTORY
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+commercialInventoryDomainServiceUrl: http://CommercialInventoryDomainService
+commercialBreakDomainServiceUrl: http://CommercialBreakDomainService
+basePriceGroupDomainServiceUrl: http://BPGService
+agrpricingDomainServiceUrl: http://AgrpricingAudienceDomainService
+spotDomainServiceUrl: http://SpotsDomainService-V1
+userManagementDomainServiceUrl: http://USERMANAGEMENTDOMAINSERVICE
+applicationManagementService : http://ApplicationManagementService-V1
+campaignDomainService : http://CAMPAIGNDOMAINSERVICE-V1
+onlinePackageDomainService : http://ONLINEPACKAGEDOMAINSERVICE
+reconcilatorDomainUrl: http://RECONCILIATORDOMAINSERVICE
+calculateMonthVar: 3
+inventoryDomainService : http://INVENTORYDOMAINSERVICE-V1
+reconciliatorDomainServiceUrl: http://RECONCILIATORDOMAINSERVICE
+destinationTopicMail: T_EMAIL
+channelSet: Channel_Set
+channelGroup: CHANNEL_GROUP

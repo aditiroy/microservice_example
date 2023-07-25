@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+      
+criApiUrl: http://CriApiService/copyRotationInstruction
+k2CRIPutUrl: http://k2-server-int02:8020/copyrotationinstruction/Status         

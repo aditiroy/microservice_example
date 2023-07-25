@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka 
+           
+trailSetBusinessServiceUrl: http://TrailSetBusinessService
+trailSetDomainServiceUrl: http://TrailSetDomainService

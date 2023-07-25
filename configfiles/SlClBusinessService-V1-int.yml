@@ -1,0 +1,13 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-intsr1:1111/eureka, http://cft-v-mt-intsr1:1112/eureka
+  
+commodityDomainUrl: http://COMMODITYDOMAINSERVICE
+agreementService: http://AGREEMENTSERVICE
+audienceDomainService: http://AUDIENCEDOMAINSERVICE
+channelsDomainService: http://CHANNELSDOMAINSERVICE
+commercialBreakBusinessUrl: http://COMMERCIALBREAKBUSINESSSERVICE
+commercialBreakDomainUrl: http://COMMERCIALBREAKDOMAINSERVICE 

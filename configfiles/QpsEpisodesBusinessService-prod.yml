@@ -1,0 +1,12 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+externalassetUri: http://appservice.int.channel4.local:9138/adsales/qpsexternalassetservice/api/
+pirateUri: http://appservice.int.channel4.local:9137/adsales/qpspirateservice/api/
+singleScheduleUri: http://appservice.int.channel4.local:9136/adsales/qpssinglescheduleservice/api/
+com.channel4.mint.qps.episodes.dataFormatInput: yyyy-MM-dd'T'HH:mm:ss'Z'
+com.channel4.mint.qps.episodes.dataFormatOutput: yyyy-MM-dd

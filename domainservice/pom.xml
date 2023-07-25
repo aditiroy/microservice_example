@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.channel4.mint</groupId>
+	<artifactId>automated-spot-domain-service</artifactId>
+	<packaging>jar</packaging>
+	<name>automated-spot-domain-service</name>
+	<description>Automated Spot Domain Service</description>
+	<parent>
+              <groupId>com.channel4.mint.commons</groupId>
+              <artifactId>mint-parent</artifactId>
+              <version>1.0.41</version>
+    </parent>
+
+	
+	<dependencies> 
+               <dependency>
+                     <groupId>org.springframework.boot</groupId>
+                     <artifactId>spring-boot-starter-data-jpa</artifactId>
+              </dependency>
+              <dependency>
+                     <groupId>com.fasterxml.jackson.datatype</groupId>
+                     <artifactId>jackson-datatype-jsr310</artifactId>
+              </dependency>
+              <dependency>
+                     <groupId>com.oracle.jdbc</groupId>
+                     <artifactId>ojdbc7</artifactId>
+              </dependency>
+              <dependency>
+                     <groupId>com.channel4.commons-mint</groupId>
+                     <artifactId>mint-exception-handler</artifactId>
+                     <version>0.1001.26</version>
+              </dependency>
+              <dependency>
+                     <groupId>io.springfox</groupId>
+                     <artifactId>springfox-swagger2</artifactId>
+              </dependency>
+              <dependency>
+                     <groupId>com.fasterxml.jackson.datatype</groupId>
+                     <artifactId>jackson-datatype-joda</artifactId>
+              </dependency>
+            
+              <dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		</dependency>
+		<dependency>
+                     <groupId>com.channel4.commons.mint</groupId>
+                     <artifactId>common-security-component</artifactId>
+                     <version>0.1.25</version>
+          </dependency>
+		
+     </dependencies>
+        
+        
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.12</version>
+				<configuration>
+					<imageName>${dockerRegistry}/${appName}:${appVersion}.${buildNumber}</imageName>
+        			<baseImage>java</baseImage>
+        			<entryPoint>java -javaagent:/${APP_AGENT_HOME}/javaagent.jar -Dappdynamics.agent.tierName=${appName} -Dappdynamics.agent.nodeName=${appName}-${NODE} $JAVA_OPTS -jar /${project.artifactId}-${project.version}.jar</entryPoint>
+
+					<!-- copy the service's jar file from target into the root directory 
+						of the image -->
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

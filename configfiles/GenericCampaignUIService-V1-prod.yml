@@ -1,0 +1,13 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+campaignBusinessUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+approvalViewUrl: http://Approval-View-Service-Mint
+onlinePackageDomainUrl: http://OnlinePackageDomainService
+campaignDomainUrl: http://CAMPAIGNDOMAINSERVICE-V1
+approvalBusinessUrl: http://APPROVALBUSINESSSERVICE-V1
+adServerDomainUrl: http://ADSERVERDOMAINSERVICE

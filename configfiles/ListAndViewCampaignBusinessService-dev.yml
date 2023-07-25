@@ -1,0 +1,27 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+           
+partnershipCampaignDomainService : http://PARTNERSHIPCAMPAIGNLINEARDOMAINSERVICE
+onlineCampaignDomainService : http://ONLINECAMPAIGNDOMAINSERVICE
+listViewDomainService : http://LISTANDVIEWCAMPAIGNDOMAINSERVICE	
+companyDomainService : http://COMPANYDOMAINSERVICE
+productDomainService : http://PRODUCTDOMAINSERVICE
+audienceDomainService : http://AUDIENCEDOMAINSERVICE
+onlineCampaignBusinessService : http://ONLINECAMPAIGNBUSINESSSERVICE
+agreementDomainService : http://AGREEMENTSERVICE
+activeMqUser : c4aspc
+activeMqPassword : Cmagic123
+activeMQUrl : tcp://fcr-v-esbint01:61621
+queue.onlinecampaign : queue.onlineCampaign
+destinationQueue: testFprQueue
+mailQueue : EmailQueue
+applicationName: List and view Campaign
+sucessSubject :  List and view Campaign Email Notification
+corePoolSize : 70
+maxPoolSize : 100
+queueCapacity : 400000

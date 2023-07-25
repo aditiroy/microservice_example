@@ -1,0 +1,103 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-prodsr1:1111/eureka,http://cft-v-mt-prodsr2:1112/eureka
+
+campaignDomainServiceURL: http://CAMPAIGNDOMAINSERVICE-V1 
+campaignBusinessServiceURL: http://CAMPAIGNBUSINESSSERVICE-V1
+spotsBusinessServiceURL: http://SPOTSBUSINESSSERVICE-V1
+commercialCampignDomainServiceURL: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+copyBusinessServiceURL: http://COPYBUSINESSSERVICE
+companyDomainServiceURL: http://COMPANYDOMAINSERVICE
+billingDomainServiceURL: http://BILLINGDOMAINSERVICE-V1
+productDomainServiceURL: http://PRODUCTDOMAINSERVICE
+userDomainService: http://UserManagementDomainService
+channelsDomainService: http://CHANNELSDOMAINSERVICE
+platformDomainService: http://PLATFORMDOMAINSERVICE
+billingBusinessServiceURL: http://BillingBusinessService-V1
+sponsorshipCreditDomainServiceUrl: http://SponsorshipCreditsDomainService-V1
+
+q_billing_information : Q_BILLING_INFORMATION
+activeMqUser : c4aspc
+activeMqPassword : Cmagic123
+activeMQUrl : tcp://fcr-v-esbint01:61621
+
+mailfrom: mintadmin@channel4.co.uk
+mailto: harbansh_b@hcl.com, megha_t@hcl.com
+fromName: Admin
+toName: Zeus ERP
+destinationTopicMail: T_EMAIL
+relinkQueueName: Q_RELINK_REQUESTS
+K2ServiceURL: http://k2-server-int02:8020
+productToProductRelinkSuccess: 'Request ID: <Request_ID> The requested spots for 
+Product:<Product_Name> <Product_Code> and Campaign CLI Month: <CLI_Month_ID> were transferred by <User_Name> on <Date> at <Time> toProduct: <Product_Name> <Product_Code> and Campaign CLI Month: <CLI_Month_ID>'
+productToProductRelinkFailure: 'Request ID: <Request_ID>
+Transfer of Spots from Product <Product_Code> <Product_Name> (<CLI_Month_ID>) to Product <Product_Code> <Product_Name> (<CLI_Month_ID>) failed due to the following reason : 
+Spot(s) belonging to Source Campaign CLI Month <CLI_Month_ID> cannot be moved to Target Campaign CLI Month <CLI_Month_ID> - <Reason_of_Failure>'
+agencyToAgencyrelinkSuccess: 'Request ID: <Request_ID> 
+The following Advertisers were moved 
+from Agency <Agency_Name> <Agency_ID> 
+to Agency <Agency_Name> <Agency_ID> 
+with effect from <Effective_Date> 
+by <User_Name> on <Date> at <Time>
+ 
+<List_of_Advertiser_Name_and_Code>'
+agencyToAgencyrelinkFailure: 'Request ID: <Request_ID>
+Linking <From_Company> to <To_Company> failed due to the following reason : <Reason_of_Failure>'
+productToAdvertiserRelinkSuccess: 'Request ID: <Request_ID>
+Product <Product_Name> <Product_Code> was moved 
+from Advertiser <Advertiser_Name> <Advertiser_Code>
+to Advertiser <Advertiser_Name> <Advertiser_Code>
+with effect from <Effective_Date>
+by <User_Name> on <Date> at <Time>.'
+productToAdvertiserRelinkFailure: 'Request ID: <Request_ID> 
+Linking Product <Product_Name> <Product_Code> to Advertiser <Advertiser_Name> <Advertiser_Code> failed due to the following reason : 
+<Reason_of_Failure>'
+agencyToHoldingCompanyRelinkSuccess: 'Request ID: <Request_ID>  
+The link between Agency <Agency_Name> <Agency_Code> 
+and Holding Company <Holding_Company_Name> <Holding_Company_Code>
+starting from <Effective_Date>
+was created by <User_Name> on <Date> at <Time>.'
+agencyToHoldingCompanyRelinkFailure: 'Request ID: <Request_ID>
+Linking <From_Company> to <To_Company> failed due to the following reason: <Reason_of_Failure>'
+advertiserToHoldingAdvertiserRelinkSuccess: 'Request ID: <Request_ID> 
+The link between Advertiser <Advertiser_Name> <Advertiser_Code>
+and Holding Advertiser <Holding_Advertiser_Name> <Holding_Advertiser_Code> 
+starting from <Effective_Date>
+was created by <User_Name> on <Date> at <Time>.'
+advertiserToHoldingAdvertiserRelinkFailure: 'Request ID: <Request_ID>
+Linking <From_Company> to <To_Company> failed due to the following reason: <Reason_of_Failure>'
+advertisertoAgencyRelinkRequestsSuccess: 'Request ID: <Request_ID> 
+For the following Product list and the Advertiser <Advertiser_Name> <Advertiser_ID>, below campaign(s) Billed to has been updated with  
+Agency <Agency_Name> <Agency_ID> 
+with effect from <Effective_Date> 
+by <User_Name> on <Date> at <Time>
+<List_of_Product_Name_and_Code>'
+advertisertoAgencyRelinkRequestsFailure: 'Request ID: <Request_ID>
+<From_Company> to <To_Company> relinking request failed due to the following reason : <Reason_of_Failure>'
+productToAgencyRelinkRequestsSuccess: 'Request ID: <Request_ID> 
+For the following Agency List and the Product <Product_Name> <Product_ID>, below campaign(s) Billed to has been updated with  
+Agency <Agency_Name> <Agency_ID> 
+with effect from <Effective_Date> 
+by <User_Name> on <Date> at <Time>
+<List_of_Agency_Name_and_Code>'
+productToAgencyRelinkRequestsFailure: 'Request ID: <Request_ID>
+<From_Product> to <To_Company> relink request failed due to the following reason : <Reason_of_Failure>'
+IrishCountryName: Irealand
+companyBusinessServiceURL: http://CompanyBusinessService
+commonMessageContent : 'The agreement affected by this move is:<Agreement_Deal_Ref_No>'
+campaignPartMailContent: 'The following campaign(s) have been updated as a result:<Product_Name> <Product_Code> Campaign ID <Campaign_ID> Since the new link effective date precedes the Target Agency creation/effective dates, these dates have been modified to the new link effective date'
+agreementDomainUrl: http://AGREEMENTSERVICE
+fixedRateJMS: 180000
+manualRejection: 'Request ID: <Request_ID>
+The requested <From_Entity> to <To_Entity> relink request has been rejected by <User_Name> on <Date> at <Time>'
+
+
+
+
+
+
+
+

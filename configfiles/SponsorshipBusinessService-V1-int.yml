@@ -1,0 +1,50 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+
+
+sponsorshipDomainServiceUrl: http://SponsorshipDomainService-V1
+sponsorshipDomainServcieUrl: http://SponsorshipDomainService-V1
+sponsorshipBusinessServcieUrl: http://SponsorshipBusinessService-V1
+sponsorshipBusinessServiceUrl: http://SponsorshipBusinessService-V1
+markUnmarkTopicName: T_CREDITS_MARK_UNMARK_EPISODES 
+scheduledEpisodeQueueName: Q_MARKING_UNMARKING_SCHEDULED_EPISODES  
+markingUnmarkingCampaignQueue: Q_MARKING_UNMARKING_CAMPAIGN 
+markingUnmarkingCPGQueue: Q_MARKING_UNMARKING_CPG
+markUnmarkNotificationQueue: Q_MARKING_UNMARKING_NOTIFICATION   
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+programmeScheduleBusinessUrl: http://QPS-PROGRAMMESCHEDULEBUSINESSSERVICE
+campaignBusinessUrl: http://CAMPAIGNBUSINESSSERVICE-V1
+partnershipCampaignDomainUrl: http://PARTNERSHIPCAMPAIGNDOMAINSERVICE-V1
+autoMarkUnmarkDomainUrl: http://SPONSORSHIPDOMAINSERVICE-V1  
+cpgDomainUrl: http://CPGDomainService  
+inventoryDomainUrl: http://INVENTORYDOMAINSERVICE-V1
+automarkUnmarkBusinessUrl: http://SPONSORSHIPBUSINESSSERVICE-V1
+scheduleProgrammeTopicFPR: T_OUT_FPR
+scheduleProgrammeTopicRating: T_OUT_RATING
+sponsorshipDomainUrl: http://SPONSORSHIPDOMAINSERVICE-V1
+singlescheduleUrl: http://appservice.int.channel4.local:9242/inventory
+channelDomainURl: http://CHANNELSDOMAINSERVICE
+from: System
+to: Administrator  
+timeOut: 5000
+fixedRateJMS: 1800000   
+partnershipDomainServiceUrl: http://PARTNERSHIPCAMPAIGNDOMAINSERVICE-V1
+inventoryDomainServiceUrl: http://INVENTORYDOMAINSERVICE-V1
+channelDomainServiceUrl: http://CHANNELSDOMAINSERVICE
+getProgramDetailMuleUrl: qqqqqqq
+scheduledEpisodeMuleService : qqqqq
+getSponsorshipCreditsUrl: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1/sponsorshipcredits
+getEventLengthFactors: http://DELIVERYDOMAINSERVICE-V1/eventlengths?revenueStream=Partnership&mediaType=Linear&eventType=Credits&isActive=true
+configuredChannelList: 94
+productDomainService: http://PRODUCTDOMAINSERVICE
+scheduledEpisodeBusinessService: http://QPSSCHEDULEEPISODESERVICE
+scheduleModeDomainServiceUrl: http://QPSSCHEDULEMODEDOMAIN
+offsetWeeks: 4
+totalNoOfWeeks: 7 
+scheduledEpisodeTopicName: T_SCHEDULED_EPISODES_CHANGES

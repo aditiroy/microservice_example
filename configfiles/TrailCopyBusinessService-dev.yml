@@ -1,0 +1,23 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+---
+ 
+trailCopyUrl: http://TRAILCOPYDOMAINSERVICE
+copyDomainServiceUrl: http://COPYDOMAINSERVICE
+productsUrl: http://PRODUCTDOMAINSERVICE
+PromocampaignDomainUrl: http://PromotioncampaignDomainService
+copyBusinessServiceUrl: http://COPYBUSINESSSERVICE
+promotionCampaignBussinessServiceV1Url: http://PROMOTIONCAMPAIGNBUSINESSSERVICEV1
+promotionCampaignDomainServiceV1Url: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+maintainPromotionStrategyDomainServiceUrl: http://MAINTAINPROMOTIONSTRATEGYDOMAINSERVICE
+productDomainServiceUrl: http://PRODUCTDOMAINSERVICE
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+
+queue.in.trailcopyinq : TrailCopyInQ
+activeMqUser : c4mc
+activeMqPassword : Cmagic123
+aciveMqUrl : tcp://fcr-v-esbint01:61621 

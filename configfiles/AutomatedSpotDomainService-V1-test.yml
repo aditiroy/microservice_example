@@ -1,0 +1,29 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+---
+domain: Delivery
+spring:
+  datasource:
+        url: jdbc:Oracle:thin:@C-MNT-TSTORA01:1521:MNTCT1A
+        username: DEL_OWNER
+        password: DelT3stO
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+            
+manualIterations: 15
+active: Active            
+inActive: InActive
+cancelStatus: Cancel
+queueStatus: Queue

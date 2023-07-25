@@ -1,0 +1,38 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr1:1112/eureka
+---
+
+com.channel4.mint.dateFormat: yyyy-MM-dd
+com.channel4.mint.dataFormatOutput: yyyy-MM-dd 
+com.channel4.mint.sponsorshipcredits.commercialBreakBusinessHost: http://CommercialBreakBusinessService
+com.channel4.mint.sponsorshipcredits.agreementDomainHost: http://AgreementService
+com.channel4.mint.sponsorshipcredits.scheduleEpisodeBusinessHost: http://QpsScheduleEpisodeService
+com.channel4.mint.sponsorshipcredits.productDomainHost: http://ProductDomainService
+com.channel4.mint.sponsorshipcredits.companyDomaineHost: http://CompanyDomainService
+com.channel4.mint.sponsorshipcredits.sponsorshipCreditAmendDomainHost: http://SponsorshipCreditsDomainService-V1 
+com.channel4.mint.sponsorshipcredits.sponsorshipCreditMuleService: http://appservice.test.channel4.local:9153/delivery/api
+com.channel4.mint.sponsorshipcredits.audienceDomainHost: http://AudienceDomainService
+---
+
+com.channel4.mint.scheduledEpisodeUrl : http://QPSSCHEDULEEPISODESERVICE/scheduledepisodes?
+com.channel4.mint.qCreditsAmendCreditMonth : Q_CREDITS_AMEND_CREDIT_MONTH
+com.channel4.mint.tCreditsMarkUnimarkEpisodes : T_CREDITS_MARK_UNIMARK_EPISODES
+com.channel4.mint.channelDomainServiceHost : http://CHANNELSDOMAINSERVICE
+com.channel4.mint.activeMQUrl : tcp://fcr-v-esbtest01:61621
+com.channel4.mint.activeMqUser : javaMQTest
+com.channel4.mint.activeMqPassword : javaMQT3st  
+sponserShipDomainServiceUrl: http://SPONSORSHIPCREDITSDOMAINSERVICE-V1              
+
+com.channel4.mint.sponsorshipcredits.sponsorshipCreditAmendBusinessHost: http://SPONSORSHIPCREDITSBUSINESSSERVICE-V1 
+rotationDomainServiceUrl: http://ROTATIONDOMAINSERVICE
+copyDomainService: http://COPYDOMAINSERVICE
+creditCopyAssignListnerPickTime: 60000
+
+simpleSetPattern: Simple Pattern
+ratioPattern: RATIO_P
+standardPattern: STD_P
+sequencePattern: SEQ_P

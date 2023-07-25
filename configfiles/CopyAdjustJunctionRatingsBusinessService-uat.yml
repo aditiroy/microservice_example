@@ -1,0 +1,14 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+---
+activeMQUrl: tcp://fcr-v-esbtest01:61629
+activeMqUser: salesmquser
+activeMqPassword: 7oXlgP4NcgsaDY
+fprDomainQueue: CopyAdjustRatings.Q
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+---
+scheduledEpisodeUrl : http://QPSSCHEDULEEPISODESERVICE/scheduledepisodes?

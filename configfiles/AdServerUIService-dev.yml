@@ -1,0 +1,25 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+adServerAudienceDomainUrl: http://AdServerDomainService/adserver/audience
+adServerDomainCreateRegionUrl: http://AdServerDomainService/region
+adServerDomainDeleteRegionUrl: http://AdServerDomainService/region/delete
+adServerDomainContentTargetUrl: http://AdServerDomainService/adserver/content/target
+adserverDomainContentTargetDeleteUrl: http://AdServerDomainService/adserver/content/target/delete
+adserverDomainFastForwardTargetUrl: http://AdServerDomainService/adserver/fastforwardfactor/target
+adserverDomainFastForwardTargetDeleteUrl: http://AdServerDomainService/adserver/fastforwardfactor/target/delete
+adServerDomainBudgetTargetUrl : http://AdServerDomainService/adserver/budget/target
+adServerDomainBudgetTargetDeleteUrl: http://AdServerDomainService/adserver/budget/target/delete
+adServerAudienceTargetUrl: http://AdServerDomainService/adserver/audience/target
+adServerAudienceTargetUrlDeleteUrl: http://AdServerDomainService/adserver/audience/target/delete
+adUnitDomainUrl: http://AdServerDomainService/adunit
+adUnitPackageDomainUrl: http://AdServerDomainService/adunit/package
+predefinedPkgUrl: http://ONLINEPACKAGEDOMAINSERVICE
+onlinePackageBusinessUrl: http://ONLINEPACKAGEBUSINESSSERVICE
+onlineCampaignBusinessUrl: http://ONLINECAMPAIGNBUSINESSSERVICE
+onlinePartnershipCampaignBusinessUrl: http://PARTNERSHIPCAMPAIGNBUSINESSSERVICE
+onlinePromoCampaignBusinessUrl: http://PROMOTIONCAMPAIGNBUSINESSSERVICE

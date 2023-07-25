@@ -1,0 +1,30 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+# For Query Validation Dao Remote Service
+com.channel4.mint.queryValidationDaoServerHost: http://QueryApprovalDAOService
+#com.channel4.mint.queryValidationDaoServerHost: http://localhost:9001
+com.channel4.mint.queryValidationDaoGetCampaignApproval: /approvals/
+com.channel4.mint.approvalvalidation.queryValidationDao.campaignNotFoundMsg: Campaign Approval Details Not Found
+com.channel4.mint.queryValidationDaoGetCampaignApprovalList: /approvals?search=approvalNumber[eq]
+
+# For Approval Validation Dao Remote Service
+#com.channel4.mint.approvalValidationDaoServerHost: http://localhost:9009
+com.channel4.mint.approvalValidationDaoServerHost: http://ApprovalValidationDAOService
+com.channel4.mint.approvalValidationDaoGetCampaignApproval: /approvals/  
+
+vldtRefType: http://CariaApprovalMapService
+
+prdAdvLnkExist: http://Product-Service-Mint
+company.service: http://CompanyService
+vldtAudienc: http://AUDIENCEVIEW
+approvalViewUrl: http://APPROVAL-VIEW-SERVICE-MINT/CampaignApprovals/
+campaignDetailsUrl: http://CAMPAIGNMANAGEMENTBS/linearcampaign/
+closeSource: CloseApproval
+linkSource: LinkCampaign
+k2StatusUri: http://k2-server-int02:8020/api/ActionApprovalTask?
+com.channel4.mint.approvalvalidation.actionName: CampaignClosed

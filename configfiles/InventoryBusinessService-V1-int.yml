@@ -1,0 +1,31 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-intsr1:1111/eureka, http://cft-v-mt-intsr1:1112/eureka
+campaignDomainUrl: http://CAMPAIGNDOMAINSERVICE-V1
+commercialInventoryDomainService: http://COMMERCIALINVENTORYDOMAINSERVICE
+commercialInventoryBusinessService: http://COMMERCIALINVENTORYBUSINESS
+inventoryDomainService: http://InventoryDomainService-V1
+inventoryBusinessUrl: http://InventoryBusinessService-V1
+muleURL: http://appservice.int.channel4.local:9242
+GB.baseAudienceCode: 9
+bpgDomainService: http://BPGService
+channelsDomainService: http://CHANNELSDOMAINSERVICE
+scheduleModeDomainService: http://QPSSCHEDULEMODEDOMAINSERVICE
+trailDomainService: http://TRAILDOMAINSERVICE
+trailCopyDomainService: http://TRAILCOPYDOMAINSERVICE
+promoCampaignDomainService: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+qpspiratemuleservice: http://appservice.int.channel4.local:9137/adsales/qpspirateservice/api
+trailBusinessService: http://TRAILBUSINESSSERVICE
+muleSingleScheduleGroupTypesUrl: http://appservice.int.channel4.local:9136/adsales/qpssinglescheduleservice/api/singleschedule/grouptypes
+muleGetSingleSheduleGroupUrl: http://appservice.int.channel4.local:9242/inventory/getsingleschedulegroup
+deliverydomainService: http://DELIVERYDOMAINSERVICE-V1
+sponsorshipDomainService: http://SPONSORSHIPDOMAINSERVICE-V1
+audienceDomainService: http://AUDIENCEDOMAINSERVICE
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+activeMQUrl: tcp://fcr-v-esbint01:61621
+schedulechangeTopic: T_SCHEDULED_EPISODES_CHANGES
+muleExchangeRateServiceUrl: http://appservice.int.channel4.local:9245/forecast/api

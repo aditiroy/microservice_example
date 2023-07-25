@@ -1,0 +1,20 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+
+companyDomainServiceUrl: http://CompanyDomainService
+productDomainServiceUrl: http://ProductDomainService
+copiesServiceUrl: http://CopyDomainService
+copyDomainServiceUrl: http://CopyDomainService
+restrictionArtistsServiceUrl: http://AssetBusinessService
+channelDomainServiceUrl: http://ChannelsDomainService
+partnershipCampaignDomainServiceUrl: http://PartnershipcampaignlinearDomainService
+copyNotificationMuleServiceURL: http://appservice.int.channel4.local:9135/criwrapperservice/api
+copyBusinessService: http://CopyBusinessService
+sponsorshipRegistrationQueue: Q_SPONSORSHIP_COPY_REGISTRATION
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123

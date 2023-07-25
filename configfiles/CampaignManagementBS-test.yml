@@ -1,0 +1,42 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+---   
+server:
+  port: 9021
+---
+domain: Campaign
+spring:
+  datasource:
+        url: jdbc:oracle:thin:@C-MNT-TSTORA01:1521:MNTCT1A
+        username: CAM_USER
+        password: CAM_USER
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+            
+
+channelSetUrl : http://CHANNELSETSERVICE
+agreementViewUrl : http://AGREEMENTSERVICE
+approvalViewUrl : http://APPROVAL-VIEW-SERVICE-MINT
+approvalServiceURI : http://APPROVAL-VIEW-SERVICE-MINT/CampaignApprovals/
+droolServiceURI : http://LINEARCAMPAIGN-RULE-SERVICE/linearCampaign/campaignLine/
+newCampaignStatus : APPROVED
+actionNamePut : CampaignUpdated
+actionNamePost : CampaignCreated
+campaignCreationManual : campaignCreationManual
+camapaignCreationFromCaria : camapaignCreationFromCaria 
+adhocAmmendManual : adhocAmmendManual
+adhocAmmendCaria : adhocAmmendCaria
+systemAssitamend : systemAssitamend
+k2StatusUri : http://k2-server-test02:8020/api/ActionApprovalTask?

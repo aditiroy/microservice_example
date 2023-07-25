@@ -1,0 +1,30 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+
+k2workFlowUser : SVCK2MINTMULEUSER 
+k2workFlowPassword : Password1
+k2workFlowDomain : channel4
+k2workFlowEnv : k2-workspace-int02
+k2WorkFlowUrl : http://k2-server-int02:8020/Approval/StartWorkflow/   
+k2ApprovalViewDetailsUrl : http://k2-server-int02:8020/Approval/TaskList
+k2StatusUri: http://k2-server-int02:8020/Approval/ActionTask?   
+approvalDomainService: http://ApprovalDomainService-V1
+approvalBusinessService: http://ApprovalBusinessService-V1
+portfoliosUrl : http://TEAMSERVICE/
+approvalViewUrl: http://APPROVAL-VIEW-SERVICE-MINT/CampaignApprovals/
+campaignDetailsUrl: http://CAMPAIGNMANAGEMENTBS/linearcampaign/
+closeSource: CloseApproval
+linkSource: LinkCampaign
+com.channel4.mint.approvalvalidation.actionName: CampaignClosed
+audienceView: http://AUDIENCEVIEW
+companyDomainService: http://COMPANYDOMAINSERVICE
+productDomainService: http://PRODUCTDOMAINSERVICE
+campaignDomainService: http://CAMPAIGNDOMAINSERVICE-V1
+commercialCampaignDomainService: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+spotBusinessService: http://SpotsBusinessService
+deliveryDomainService : http://DELIVERYDOMAINSERVICE-V1
+companyService : http://COMPANYSERVICE

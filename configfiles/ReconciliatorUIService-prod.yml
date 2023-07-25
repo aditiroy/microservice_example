@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+securityUrl: http://SECURITYSERVER/users
+reconciliatorAccountUrl: http://RECONCILIATORDOMAINSERVICE/reconciliatoraccount
+reconciliatorGroupUrl: http://RECONCILIATORDOMAINSERVICE/reconciliatorgroup
+reconciliatorDomainService: http://RECONCILIATORDOMAINSERVICE
+agreementBusinessServiceUrl: http://AGREEMENTBUSINESSSERVICE

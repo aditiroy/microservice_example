@@ -1,0 +1,20 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka
+channelDomainService: http://CHANNELSDOMAINSERVICE
+muleUri: http://appservice.test.channel4.local:9942
+fprBusinessService: http://FprBusinessService-V1
+inventoryDomainServiceUrl: http://InventoryDomainService-V1
+fprDomainService: http://FPRDomainService
+inventoryBusinessService: http://INVENTORYSTAGEBUSINESSSERVICE-V1
+regionDomainService: http://REGIONDOMAINSERVICE
+siscMuleFlow: http://appservice.test.channel4.local:9942/inventory
+fileLocationQueue: Q_IN_FPR
+activeMQUrl: tcp://fcr-v-esbtest01:61629
+activeMqUser: salesmquser
+activeMqPassword: 7oXlgP4NcgsaDY
+qpsBusinessService: http://QpsJunctionBusinessService
+com.channelRule.inventoryBusinessService: http://INVENTORYBUSINESSSERVICE-V1

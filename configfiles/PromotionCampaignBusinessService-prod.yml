@@ -1,0 +1,17 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-prodsr1:1111/eureka,http://cft-v-mt-prodsr1:1112/eureka
+---
+ 
+channelSetUrl: http://CHANNELSDOMAINSERVICE
+audienceDomainserviceUrl: http://AUDIENCEDOMAINSERVICE
+onlinepackageDomainServiceUrl: http://ONLINEPACKAGEDOMAINSERVICE
+promotionDomainUrl: http://PROMOTIONCAMPAIGNDOMAINSERVICE
+promoCampaignRoleName: Media Planner
+com.channel4.mint.platFormDomainHost: http://PlatformDomainService
+com.channel4.mint.promoStartegyBusinessHost: http://MAINTAINPROMOTIONSSTRATEGYBUSINESSSERVICE
+com.channel4.mint.campaignDomainHost: http://CampaignDomainService-V1
+

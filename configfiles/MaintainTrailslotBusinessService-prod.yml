@@ -1,0 +1,15 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-prodsr1:1111/eureka,http://cft-v-mt-prodsr1:1112/eureka
+---
+
+commercialBreakBusinessServiceURL: http://COMMERCIALBREAKBUSINESSSERVICE
+maintainTrailslotDomainServiceURL: http://MAINTAINTRAILSLOTDOMAINSERVICE
+trailDomainServiceURL: http://TrailDomainService
+channelsDomainServiceURL: http://ChannelsDomainService
+promotionCampaignDomainServiceURL: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+trailCopyDomainServiceURL: http://TrailCopyDomainService
+scheduleModeDomainUrl : http://QPSSCHEDULEMODEDOMAINSERVICE

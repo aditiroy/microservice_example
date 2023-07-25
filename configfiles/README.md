@@ -1,0 +1,1 @@
+This project will have all the configuration files for all environments which will be read by all microservices through config uration server.

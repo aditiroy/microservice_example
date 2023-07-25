@@ -1,0 +1,16 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-linsbx:1111/eureka,http://cft-v-mt-linsbx:1112/eureka
+           
+serverListAD: DCR-DC02,DCR-DC03,FCR-DC01,CFT-DC01
+serverPortAD: 389
+serverRootDN: /DC=CHANNEL4,DC=LOCAL
+serverOU: OU=Users,OU=Business
+domainName: channel4.co.uk
+ldapUserName: mintuser1
+ldapPassword: Channel17
+searchQueryString: OU=AdSalesRole, OU=Application, OU=User Roles, OU=Business, DC=channel4, DC=local
+userManagementDomainUrl: http://userManagementDomainservice

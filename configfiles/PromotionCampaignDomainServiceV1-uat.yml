@@ -1,0 +1,23 @@
+domain: Campaign
+spring:
+  
+  datasource:
+        url: jdbc:oracle:thin:@C-MNT-TSTORA01:1521:MNTUAT1
+        username: CAMP_USER
+        password: Mint03s
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jpa:
+       show-sql: false 
+       properties:
+          hibernate:
+            format-sql: true
+            dialect: org.hibernate.dialect.Oracle12cDialect
+---
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-uatsr1:1111/eureka,http://cft-v-mt-uatsr2:1112/eureka

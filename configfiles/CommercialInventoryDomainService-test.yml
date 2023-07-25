@@ -1,0 +1,31 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-testsr1:1111/eureka,http://cft-v-mt-testsr2:1112/eureka
+---
+domain: Inventory 
+spring:
+  datasource:
+        url: jdbc:oracle:thin:@C-MNT-TSTORA01:1521:MNTCT1A
+        username: INV_USER
+        password: InvT3stU
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        tomcat:
+            connectionProperties: v$session.program=${domain}_${spring.application.name}
+  jackson:
+        serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.Oracle12cDialect
+            
+validAppliedFactors: BOOKED,1STWEEK,2NDWEEK,3RDWEEK,4THWEEK,LASTYEAR
+bookedAppliedFactor: BOOKED
+firstWeekAppliedFactor: 1STWEEK
+secondWeekAppliedFactor: 2NDWEEK
+thirdWeekAppliedFactor: 3RDWEEK
+fourthWeekAppliedFactor: 4THWEEK
+lastYearAppliedFactor: LASTYEAR

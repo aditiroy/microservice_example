@@ -1,0 +1,30 @@
+eureka:
+   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+           defaultZone: http://cft-v-mt-intsr1:1111/eureka,http://cft-v-mt-intsr1:1112/eureka
+
+promoCampaignDomainService: http://PROMOTIONCAMPAIGNDOMAINSERVICEV1
+campaignDomainService: http://CAMPAIGNDOMAINSERVICE-V1
+cpgDomainService: http://CPGDOMAINSERVICE
+episodesBusinessService: http://QPSEPISODESBUSINESSSERVICE
+partnershipCampaignDomainService: http://PARTNERSHIPCAMPAIGNDOMAINSERVICE-V1
+commercialCampaignDomainService: http://COMMERCIALCAMPAIGNDOMAINSERVICE-V1
+adServerDomainService: http://ADSERVERDOMAINSERVICE
+userMgmtDomainService: http://USERMANAGEMENTDOMAINSERVICE
+platformDomainService: http://PLATFORMDOMAINSERVICE
+companiesDomainService: http://COMPANYDOMAINSERVICE
+onlinePackageDomainService: http://ONLINEPACKAGEDOMAINSERVICE
+productDomainService: http://PRODUCTDOMAINSERVICE
+agreementServiceurl: http://AGREEMENTSERVICE
+muleService: http://
+adserverQueue: T_ADSERVER
+fixedRate: 6000
+activeMQUrl: tcp://fcr-v-esbint01:61621
+activeMqUser: c4aspc
+activeMqPassword: Cmagic123
+
+
+
+
